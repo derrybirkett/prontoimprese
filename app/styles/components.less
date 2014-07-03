@@ -1,0 +1,120 @@
+/* 
+
+    Components
+    ----------
+
+    010 QNbar
+        0100 Qn Logo
+    020 Logo / Branding
+        0200 Logo Full
+        0210 Logo Solo
+        0220 Logotype 
+    030 Search
+        0310 What
+        0320 Where
+    040 Buttons
+        0410 Playbutton
+        0420 Google Play Store
+    050 Lists
+        0510 Inline
+    060 Banners
+        0610 Island
+    070 Images
+        0710 Mobiles
+
+
+
+
+*/
+
+
+/* ---------------------------------------
+
+    010 QN Bar
+
+
+----------------------------------------*/
+
+    /* QN Logo */
+    .qnlogo {
+        height:inherit;
+        width:50px;
+        background-image:url(../images/qn.svg);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 10px;;     
+
+    }
+
+/* ---------------------------------------
+
+    020 Branding
+    Pronto Imprese Branding
+
+----------------------------------------*/
+
+    .logo {
+        background-image:url('../images/logo.png');
+        background-size:100%;
+        height:120px;
+    }
+
+
+/* ---------------------------------------
+
+    030 SEARCH
+
+
+----------------------------------------*/
+
+    .search {
+        padding:20px;
+        input {
+            width:100%;   
+        }
+    }
+
+
+/* ---------------------------------------
+
+    040 Buttons
+
+
+----------------------------------------*/
+
+    .button {
+        .play {
+            
+        }
+    }
+
+
+/* ---------------------------------------
+
+    050 LISTS
+        0510 Inline
+
+
+----------------------------------------*/
+
+    ul {
+       padding:0px; 
+
+        &.inline {
+            li { 
+                display:inline-block;  
+                border-right:1px solid grey;
+                padding-right:1em;
+                margin-right:1em;
+                a {
+                    display:block;
+                }
+                &:last-child {
+                    border-right:none;
+                    padding-right:0em;
+                    margin-right:0em;
+                }
+            }
+        }
+    }
