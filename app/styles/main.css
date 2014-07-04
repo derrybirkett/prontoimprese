@@ -71,10 +71,10 @@ Palette
 }
 .dark {
   background: #333333;
-  color: white;
+  color: #999999;
 }
 .dark a {
-  color: white;
+  color: #999999;
 }
 /*
 
@@ -128,6 +128,7 @@ a {
     Components
     ----------
 
+    000 Mixins
     010 QNbar
         0100 Qn Logo
     020 Logo / Branding
@@ -147,12 +148,23 @@ a {
     070 Images
         0710 Mobiles
     080 Blocks
+        0800 Scaricare
         0810 Prefooter
 
 
 
 
+
 */
+/* ---------------------------------------
+
+    000 MIXINS
+        010 Vspace
+
+----------------------------------------*/
+.vspace {
+  margin: 50px 0px;
+}
 /* ---------------------------------------
 
     010 QN Bar
@@ -188,8 +200,8 @@ a {
   background-image: url('../images/logo_solo_nero.png');
 }
 .logo.small {
-  width: 229px;
-  height: 109px;
+  width: 129px;
+  height: 104px;
 }
 .logo.solo {
   background-image: url('../images/bee.png');
@@ -278,12 +290,21 @@ ul {
 /* ---------------------------------------
 
     080 BLOCKS
+        0800 Scaricare
         0810 Prefooter
 
 ----------------------------------------*/
+.scaricare {
+  padding-top: 50px;
+}
+.scaricare .caps {
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
 .prefooter {
   background: #fecf0f;
-  padding: 10px;
+  padding: 10px 50px;
+  font-size: 80%;
 }
 .prefooter a {
   color: #333333;
@@ -296,11 +317,21 @@ ul {
 ----------------------------------------*/
 .footer {
   background: #333333;
-  color: white;
+  color: #999999;
   padding: 50px;
+  font-size: 90%;
 }
 .footer a {
-  color: white;
+  color: #999999;
+}
+.logins {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.logins ul.nav-pills > li a {
+  color: #fecf0f;
+  background: black;
 }
 /*
 

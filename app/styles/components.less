@@ -3,6 +3,7 @@
     Components
     ----------
 
+    000 Mixins
     010 QNbar
         0100 Qn Logo
     020 Logo / Branding
@@ -22,13 +23,25 @@
     070 Images
         0710 Mobiles
     080 Blocks
+        0800 Scaricare
         0810 Prefooter
+
 
 
 
 
 */
 
+/* ---------------------------------------
+
+    000 MIXINS
+        010 Vspace
+
+----------------------------------------*/
+
+    .vspace {
+        margin:50px 0px;   
+    }
 
 /* ---------------------------------------
 
@@ -68,8 +81,8 @@
             background-image:url('../images/logo_solo_nero.png');
         }
         &.small {
-            width:229px;
-            height:109px;
+            width:129px;
+            height:104px;
         }
         &.solo {
             background-image:url('../images/bee.png');
@@ -181,13 +194,23 @@
 /* ---------------------------------------
 
     080 BLOCKS
+        0800 Scaricare
         0810 Prefooter
 
 ----------------------------------------*/
 
+    .scaricare {
+        padding-top:50px;
+        .caps {
+            text-transform:uppercase;
+            padding:10px 0px;
+        }
+    }
+
     .prefooter {
         .primary;
-        padding:10px;
+        padding:10px 50px;
+        font-size:80%;
     }
 
 
@@ -201,4 +224,22 @@
     .footer {
         .dark;
         padding:50px;
+        font-size:90%;
+    }
+
+    .logins {
+        margin-top:50px;
+        margin-bottom:10px;
+
+        .centered;
+        ul {
+            &.nav-pills {
+                & > li {
+                    a { 
+                        color:@primary;
+                        background:black; 
+                    }
+                }
+            }
+        }
     }
