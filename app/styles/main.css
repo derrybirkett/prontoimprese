@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 /*
 
     PRONTOIMPRESE
@@ -5,6 +6,49 @@
     frontend by @derrybirkett
 
 */
+/* Bootstrap stuff */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.affix {
+  position: fixed;
+}
 /* Include */
 /*
 
@@ -12,6 +56,73 @@ Palette
 -------
 
 */
+/* Shades */
+/* ---------------------------------------
+
+    010 Block Styles
+
+
+----------------------------------------*/
+.primary {
+  background: #fecf0f;
+}
+.primary a {
+  color: #333333;
+}
+.dark {
+  background: #333333;
+  color: white;
+}
+.dark a {
+  color: white;
+}
+/*
+
+    TYPOGRAPHY
+    ----------
+
+    000 Fonts
+    010 Mixins
+    020 Headers
+    030 Paragraph (Body)
+    040 Links
+    050 Lists
+
+*/
+/* ---------------------------------------
+
+    000 FONTS
+
+
+----------------------------------------*/
+/* Set font family for all */
+* {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+/* ---------------------------------------
+
+    010 Mixins
+
+
+----------------------------------------*/
+.centered {
+  text-align: center;
+}
+/* ---------------------------------------
+
+    020 Headers
+
+
+----------------------------------------*/
+/* ---------------------------------------
+
+    040 Links
+
+
+----------------------------------------*/
+a {
+  color: #333333;
+}
 /* 
 
     Components
@@ -35,6 +146,8 @@ Palette
         0610 Island
     070 Images
         0710 Mobiles
+    080 Blocks
+        0810 Prefooter
 
 
 
@@ -60,12 +173,28 @@ Palette
 
     020 Branding
     Pronto Imprese Branding
+        0210 Logo on white
+        0220 Small Logo on dark
+        0230 Bee Only Logo
 
 ----------------------------------------*/
 .logo {
   background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
   background-size: 100%;
   height: 120px;
+}
+.logo.dark {
+  background-image: url('../images/logo_solo_nero.png');
+}
+.logo.small {
+  width: 229px;
+  height: 109px;
+}
+.logo.solo {
+  background-image: url('../images/bee.png');
+  width: 80px;
+  height: 56px;
 }
 /* ---------------------------------------
 
@@ -76,8 +205,11 @@ Palette
 .search {
   padding: 20px;
 }
-.search input {
-  width: 100%;
+.search .input-group {
+  margin-bottom: 10px;
+}
+.search .input-group input {
+  font-weight: 200;
 }
 /* ---------------------------------------
 
@@ -85,6 +217,15 @@ Palette
 
 
 ----------------------------------------*/
+.button.googleplay {
+  background-image: url('../images/googleplay.png');
+  background-size: 100%;
+  height: 67px;
+  width: 194px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ---------------------------------------
 
     050 LISTS
@@ -94,20 +235,72 @@ Palette
 ----------------------------------------*/
 ul {
   padding: 0px;
+  /*
+        &.inline {
+            li { 
+                display:inline-block;  
+                border-right:1px solid grey;
+                padding-right:1em;
+                margin-right:1em;
+                a {
+                    display:block;
+                }
+                &:last-child {
+                    border-right:none;
+                    padding-right:0em;
+                    margin-right:0em;
+                }
+            }
+        }
+        */
 }
-ul.inline li {
-  display: inline-block;
-  border-right: 1px solid grey;
-  padding-right: 1em;
-  margin-right: 1em;
-}
-ul.inline li a {
+/* ---------------------------------------
+
+    060 BANNERS
+        0620 Island
+
+
+----------------------------------------*/
+.banner.island {
+  width: 300px;
+  height: 250px;
+  background-color: #fecf0f;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-ul.inline li:last-child {
-  border-right: none;
-  padding-right: 0em;
-  margin-right: 0em;
+/* ---------------------------------------
+
+    070 Images
+        0710 Mobiles
+
+----------------------------------------*/
+/* ---------------------------------------
+
+    080 BLOCKS
+        0810 Prefooter
+
+----------------------------------------*/
+.prefooter {
+  background: #fecf0f;
+  padding: 10px;
+}
+.prefooter a {
+  color: #333333;
+}
+/* ---------------------------------------
+
+    090 FOOTER
+        
+
+----------------------------------------*/
+.footer {
+  background: #333333;
+  color: white;
+  padding: 50px;
+}
+.footer a {
+  color: white;
 }
 /*
 
