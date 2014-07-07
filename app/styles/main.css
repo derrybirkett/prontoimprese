@@ -76,6 +76,9 @@ Palette
 .dark a {
   color: #999999;
 }
+.grey {
+  background: #eeeeee;
+}
 /*
 
     TYPOGRAPHY
@@ -87,6 +90,10 @@ Palette
     030 Paragraph (Body)
     040 Links
     050 Lists
+    060 Listings
+        0600 Basic Listing
+        0610 Sponsored
+
 
 */
 /* ---------------------------------------
@@ -123,6 +130,23 @@ Palette
 a {
   color: #333333;
 }
+/* ---------------------------------------
+
+    060 Listings
+        0600 
+        0610 Basic
+        0620 Sponsored
+        0630 Meta
+
+
+----------------------------------------*/
+.meta {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.meta a {
+  color: #999999;
+}
 /* 
 
     Components
@@ -136,8 +160,10 @@ a {
         0210 Logo Solo
         0220 Logotype 
     030 Search
-        0310 What
-        0320 Where
+        0300 Home
+            03010 What
+            03020 Where
+        0310 Default
     040 Buttons
         0410 Playbutton
         0420 Google Play Store
@@ -145,26 +171,26 @@ a {
         0510 Inline
     060 Banners
         0610 Island
+        0620 Vetrina
     070 Images
         0710 Mobiles
     080 Blocks
         0800 Scaricare
         0810 Prefooter
-
-
-
-
+            08110 Province
+            08120 Regions
+    090 Footer
+    0100 Pagination
+    0110 Navbar
+    0120 Listings (search results)
+        01210 Sponsored Listings
 
 */
 /* ---------------------------------------
 
     000 MIXINS
-        010 Vspace
 
 ----------------------------------------*/
-.vspace {
-  margin: 50px 0px;
-}
 /* ---------------------------------------
 
     010 QN Bar
@@ -185,6 +211,7 @@ a {
 
     020 Branding
     Pronto Imprese Branding
+        0200 Logo
         0210 Logo on white
         0220 Small Logo on dark
         0230 Bee Only Logo
@@ -214,14 +241,25 @@ a {
 
 
 ----------------------------------------*/
-.search {
+.search .search-box {
   padding: 20px;
 }
-.search .input-group {
+.search .search-box .input-group {
   margin-bottom: 10px;
 }
-.search .input-group input {
+.search .search-box .input-group input {
   font-weight: 200;
+}
+.search.filled {
+  background-color: #fecf0f;
+}
+.search.filled .logo {
+  height: 60px;
+  background-color: black;
+  background-image: url('../images/logo_solo_nero.png');
+  /* Make it smaller */
+  background-position: center center;
+  background-size: 20%;
 }
 /* ---------------------------------------
 
@@ -266,20 +304,34 @@ ul {
         }
         */
 }
+ul .list-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  /* Compensate for Inline styles first child padding */
+  padding: 0px 5px;
+}
 /* ---------------------------------------
 
     060 BANNERS
         0620 Island
+        0630 300x100
 
 
 ----------------------------------------*/
-.banner.island {
-  width: 300px;
-  height: 250px;
+.banner {
   background-color: #fecf0f;
+  margin: 10px 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.banner.island {
+  width: 300px;
+  height: 250px;
+}
+.banner.vetrina {
+  width: 300px;
+  height: 100px;
 }
 /* ---------------------------------------
 
@@ -302,12 +354,8 @@ ul {
   padding: 10px 0px;
 }
 .prefooter {
-  background: #fecf0f;
-  padding: 10px 50px;
+  padding: 10px 20px;
   font-size: 80%;
-}
-.prefooter a {
-  color: #333333;
 }
 /* ---------------------------------------
 
@@ -318,7 +366,7 @@ ul {
 .footer {
   background: #333333;
   color: #999999;
-  padding: 50px;
+  padding: 50px 20px;
   font-size: 90%;
 }
 .footer a {
@@ -333,15 +381,57 @@ ul {
   color: #fecf0f;
   background: black;
 }
-/*
-
-Base
-----
-
-*/
 /* ---------------------------------------
 
-    Vertical
+    0100 PAGINATION
 
 
 ----------------------------------------*/
+/* ---------------------------------------
+
+    0110 Navbar
+
+
+----------------------------------------*/
+.navbar {
+  margin-bottom: 0px;
+}
+/* ---------------------------------------
+
+    0120 Listings (search results)
+
+
+----------------------------------------*/
+/* ---------------------------------------
+
+    0130 Ratings
+        01310 User Rating
+        01320 Stars
+
+----------------------------------------*/
+.user-rating {
+  float: left;
+  margin-right: 15px;
+  color: #fecf0f;
+}
+.stars li {
+  padding: 0px;
+}
+.stars .glyphicon {
+  color: #555555;
+}
+.stars .glyphicon.active {
+  color: #fecf0f;
+}
+/* Layout Tweaks */
+/* 
+
+SM
+--
+Styles up to small devices
+
+*/
+/* Add Padding to containers */
+section.body {
+  padding: 0px 20px;
+}

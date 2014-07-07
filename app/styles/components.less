@@ -11,8 +11,10 @@
         0210 Logo Solo
         0220 Logotype 
     030 Search
-        0310 What
-        0320 Where
+        0300 Home
+            03010 What
+            03020 Where
+        0310 Default
     040 Buttons
         0410 Playbutton
         0420 Google Play Store
@@ -20,28 +22,28 @@
         0510 Inline
     060 Banners
         0610 Island
+        0620 Vetrina
     070 Images
         0710 Mobiles
     080 Blocks
         0800 Scaricare
         0810 Prefooter
-
-
-
-
+            08110 Province
+            08120 Regions
+    090 Footer
+    0100 Pagination
+    0110 Navbar
+    0120 Listings (search results)
+        01210 Sponsored Listings
 
 */
 
 /* ---------------------------------------
 
     000 MIXINS
-        010 Vspace
 
 ----------------------------------------*/
 
-    .vspace {
-        margin:50px 0px;   
-    }
 
 /* ---------------------------------------
 
@@ -66,6 +68,7 @@
 
     020 Branding
     Pronto Imprese Branding
+        0200 Logo
         0210 Logo on white
         0220 Small Logo on dark
         0230 Bee Only Logo
@@ -101,12 +104,30 @@
 ----------------------------------------*/
 
     .search {
-        padding:20px;
-        .input-group {
-            margin-bottom:10px;
-            input {
-                font-weight: 200;
+
+        .search-box {
+                padding:20px;
+                .input-group {
+                    margin-bottom:10px;
+                    input {
+                        font-weight: 200;
+                    }
+                }
+        }
+
+        &.filled {
+            
+            .logo {
+                height:60px;
+                background-color:black;
+                background-image:url('../images/logo_solo_nero.png');
+                
+                /* Make it smaller */
+                background-position:center center;
+                background-size:20%;
             }
+
+            background-color:@primary;
         }
     }
 
@@ -161,6 +182,15 @@
             }
         }
         */
+
+        .list-title {
+            text-transform:uppercase;
+            font-weight:700;
+
+            /* Compensate for Inline styles first child padding */
+            padding:0px 5px;
+        }
+
     }
 
 
@@ -169,16 +199,23 @@
 
     060 BANNERS
         0620 Island
+        0630 300x100
 
 
 ----------------------------------------*/
 
    .banner {
+        background-color:@primary;
+        margin:10px 0px;
+        .center-block();
         &.island {
             width:300px;
             height:250px;
-            background-color:@primary;
-            .center-block();
+        }
+
+        &.vetrina {
+            width:300px;
+            height:100px;
         }
     }
 
@@ -208,8 +245,7 @@
     }
 
     .prefooter {
-        .primary;
-        padding:10px 50px;
+        padding:10px @hspace;
         font-size:80%;
     }
 
@@ -223,7 +259,7 @@
 
     .footer {
         .dark;
-        padding:50px;
+        padding:50px @hspace;
         font-size:90%;
     }
 
@@ -240,6 +276,71 @@
                         background:black; 
                     }
                 }
+            }
+        }
+    }
+
+
+
+/* ---------------------------------------
+
+    0100 PAGINATION
+
+
+----------------------------------------*/
+
+    .pagination {
+    }
+
+
+/* ---------------------------------------
+
+    0110 Navbar
+
+
+----------------------------------------*/
+
+    .navbar {
+        margin-bottom:0px;
+    }
+
+
+
+/* ---------------------------------------
+
+    0120 Listings (search results)
+
+
+----------------------------------------*/
+
+    .listings {
+        
+    }
+
+
+
+/* ---------------------------------------
+
+    0130 Ratings
+        01310 User Rating
+        01320 Stars
+
+----------------------------------------*/
+
+    .user-rating {
+        float:left;
+        margin-right:15px;
+        color: @primary;
+    }
+
+    .stars {
+        li {
+            padding:0px;
+        }
+        .glyphicon {
+            color:@gray;
+            &.active {
+                color:@primary;
             }
         }
     }
