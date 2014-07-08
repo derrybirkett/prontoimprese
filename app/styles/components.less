@@ -33,8 +33,12 @@
     090 Footer
     0100 Pagination
     0110 Navbar
-    0120 Listings (search results)
+    0120 LISTINGS (search results)
         01210 Sponsored Listings
+    0130 Ratings system
+    0140 Logins
+    0150 SCHEDA
+        
 
 */
 
@@ -44,6 +48,9 @@
 
 ----------------------------------------*/
 
+    .btn {
+        
+    }
 
 /* ---------------------------------------
 
@@ -164,16 +171,11 @@
     ul {
        padding:0px; 
 
-/*
-        &.inline {
+        &.list-inline.dividers {
             li { 
-                display:inline-block;  
                 border-right:1px solid grey;
-                padding-right:1em;
-                margin-right:1em;
-                a {
-                    display:block;
-                }
+                padding-right:0.5em;
+                margin-right:0.5em;
                 &:last-child {
                     border-right:none;
                     padding-right:0em;
@@ -181,7 +183,6 @@
                 }
             }
         }
-        */
 
         .list-title {
             text-transform:uppercase;
@@ -263,23 +264,6 @@
         font-size:90%;
     }
 
-    .logins {
-        margin-top:50px;
-        margin-bottom:10px;
-
-        .centered;
-        ul {
-            &.nav-pills {
-                & > li {
-                    a { 
-                        color:@primary;
-                        background:black; 
-                    }
-                }
-            }
-        }
-    }
-
 
 
 /* ---------------------------------------
@@ -341,6 +325,90 @@
             color:@gray;
             &.active {
                 color:@primary;
+            }
+        }
+    }
+
+
+
+/* ---------------------------------------
+
+    0140 LOGINS
+
+----------------------------------------*/
+
+    .logins {
+        margin:20px 0px;
+        .centered;
+
+        ul {
+            li { 
+                font-size:12px; 
+                color:@gray-lighter;
+            }
+            &.nav-pills {
+                & > li {
+                    a { 
+                        color:@primary;
+                        background:black; 
+                    }
+                }
+            }
+        }
+    }
+
+
+/* ---------------------------------------
+
+    0150 SCHEDA
+        01500 Scheda Tweaks
+        01510 Map
+        01520 Address
+        01530 Options
+
+
+----------------------------------------*/
+
+    .scheda {
+        h1 {
+            margin-bottom:0px;
+        }
+        h2 {
+            margin-top:5px;
+        }
+    }
+
+   .mappa {
+        height:150px;
+        width:100%;   
+        background-color: @gray-lighter;
+        border-bottom:2px solid @primary;
+    }
+        
+    .address {
+        padding:10px 0px;
+        p {
+            margin-bottom:5px;
+            color:grey;
+            &.strong {
+                color:black;
+            }
+        }
+    }
+
+
+    .options {
+        background-color:@dark;
+        padding:5px;
+        border-top:4px solid @primary;
+        ul {
+            padding:5px;
+            &.nav-pills {
+                li {
+                    a {
+                        .onDark;
+                    }
+                }
             }
         }
     }

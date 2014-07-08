@@ -79,6 +79,19 @@ Palette
 .grey {
   background: #eeeeee;
 }
+/* ---------------------------------------
+
+    020 Button Styles
+
+
+----------------------------------------*/
+.onDark {
+  background-color: #555;
+  color: #fecf0f;
+}
+.onDark a {
+  color: #fecf0f;
+}
 /*
 
     TYPOGRAPHY
@@ -103,7 +116,14 @@ Palette
 
 ----------------------------------------*/
 /* Set font family for all */
-* {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 /* ---------------------------------------
@@ -121,6 +141,14 @@ Palette
 
 
 ----------------------------------------*/
+h1 {
+  font-weight: 200;
+  font-size: 24px;
+}
+h2 {
+  font-weight: 200;
+  font-size: 18px;
+}
 /* ---------------------------------------
 
     040 Links
@@ -182,8 +210,12 @@ a {
     090 Footer
     0100 Pagination
     0110 Navbar
-    0120 Listings (search results)
+    0120 LISTINGS (search results)
         01210 Sponsored Listings
+    0130 Ratings system
+    0140 Logins
+    0150 SCHEDA
+        
 
 */
 /* ---------------------------------------
@@ -285,24 +317,16 @@ a {
 ----------------------------------------*/
 ul {
   padding: 0px;
-  /*
-        &.inline {
-            li { 
-                display:inline-block;  
-                border-right:1px solid grey;
-                padding-right:1em;
-                margin-right:1em;
-                a {
-                    display:block;
-                }
-                &:last-child {
-                    border-right:none;
-                    padding-right:0em;
-                    margin-right:0em;
-                }
-            }
-        }
-        */
+}
+ul.list-inline.dividers li {
+  border-right: 1px solid grey;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+ul.list-inline.dividers li:last-child {
+  border-right: none;
+  padding-right: 0em;
+  margin-right: 0em;
 }
 ul .list-title {
   text-transform: uppercase;
@@ -372,15 +396,6 @@ ul .list-title {
 .footer a {
   color: #999999;
 }
-.logins {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.logins ul.nav-pills > li a {
-  color: #fecf0f;
-  background: black;
-}
 /* ---------------------------------------
 
     0100 PAGINATION
@@ -421,6 +436,70 @@ ul .list-title {
   color: #555555;
 }
 .stars .glyphicon.active {
+  color: #fecf0f;
+}
+/* ---------------------------------------
+
+    0140 LOGINS
+
+----------------------------------------*/
+.logins {
+  margin: 20px 0px;
+  text-align: center;
+}
+.logins ul li {
+  font-size: 12px;
+  color: #eeeeee;
+}
+.logins ul.nav-pills > li a {
+  color: #fecf0f;
+  background: black;
+}
+/* ---------------------------------------
+
+    0150 SCHEDA
+        01500 Scheda Tweaks
+        01510 Map
+        01520 Address
+        01530 Options
+
+
+----------------------------------------*/
+.scheda h1 {
+  margin-bottom: 0px;
+}
+.scheda h2 {
+  margin-top: 5px;
+}
+.mappa {
+  height: 150px;
+  width: 100%;
+  background-color: #eeeeee;
+  border-bottom: 2px solid #fecf0f;
+}
+.address {
+  padding: 10px 0px;
+}
+.address p {
+  margin-bottom: 5px;
+  color: grey;
+}
+.address p.strong {
+  color: black;
+}
+.options {
+  background-color: #333333;
+  padding: 5px;
+  border-top: 4px solid #fecf0f;
+}
+.options ul {
+  padding: 5px;
+}
+.options ul.nav-pills li a {
+  background-color: #555;
+  color: #fecf0f;
+}
+.options ul.nav-pills li a a {
   color: #fecf0f;
 }
 /* Layout Tweaks */
