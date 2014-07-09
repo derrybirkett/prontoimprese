@@ -36,8 +36,9 @@
     0120 LISTINGS (search results)
         01210 Sponsored Listings
     0130 Ratings system
-    0140 Logins
-    0150 SCHEDA
+    0140 Reviews
+    0150 Logins
+    0160 SCHEDA
         
 
 */
@@ -48,13 +49,18 @@
 
 ----------------------------------------*/
 
-    .btn {
-        
+    /* Remove padding from columns */
+    .fullwidth {
+        .col* {
+            padding:0px;
+        }
     }
 
 /* ---------------------------------------
 
-    010 QN Bar
+    010 Header
+        0110 QN
+        0120 Testata
 
 
 ----------------------------------------*/
@@ -71,6 +77,12 @@
 
     }
 
+    /* Testata */
+    .testata {
+        padding:10px;
+        background-color:@dark;
+    }
+
 /* ---------------------------------------
 
     020 Branding
@@ -83,22 +95,37 @@
 ----------------------------------------*/
 
     .logo {
+
+        /* Use background images defaults */
         background-image:url('../images/logo.png');
         background-repeat:no-repeat;
-        background-size:100%;
+        background-size:contain;
+        background-position:center center;
+
+        /* Set a default height */
         height:120px;
+
+        /* Make some spacing inside the logo box so it doesnt touch the sides */
+        padding:10px;
+
+        /* Variations */
         &.dark {
             background-image:url('../images/logo_solo_nero.png');
         }
         &.small {
-            width:129px;
-            height:104px;
+            height:50px;
+        }
+        &.vsmall {
+            height:60px;
+            /* Make it smaller */
+            background-size:20%;
         }
         &.solo {
             background-image:url('../images/bee.png');
             width:80px;
             height:56px;
         }
+
     }
 
 
@@ -123,17 +150,6 @@
         }
 
         &.filled {
-            
-            .logo {
-                height:60px;
-                background-color:black;
-                background-image:url('../images/logo_solo_nero.png');
-                
-                /* Make it smaller */
-                background-position:center center;
-                background-size:20%;
-            }
-
             background-color:@primary;
         }
     }
@@ -142,9 +158,25 @@
 /* ---------------------------------------
 
     040 Buttons
-
+        0400 Pronto buttons
+        0410 Google Play
 
 ----------------------------------------*/
+
+
+    /* Button Style for Pronto on Dark */
+    .btn-pronto {
+        text-transform:uppercase;
+        font-weight:200;
+        font-size:11px;
+        background-color:lighten(@dark,15%);
+        color:lighten(@primary, 10%);   
+        &.inverse {
+            background-color:@primary;
+            color:@dark;
+        }
+    }
+
 
     .button {
         .play {
@@ -182,6 +214,9 @@
                     margin-right:0em;
                 }
             }
+        }
+        &.list-inline.inline {
+            display:inline-block;
         }
 
         .list-title {
@@ -311,8 +346,17 @@
 
 ----------------------------------------*/
 
+
+    .user-ratings {
+        .centered;
+        padding:10px;
+        &.large {
+            font-size:24px;
+        }
+    }
+
     .user-rating {
-        float:left;
+        display:inline-block;
         margin-right:15px;
         color: @primary;
     }
@@ -329,11 +373,72 @@
         }
     }
 
+    // Ratings list
+    .ratings {
+        dt {
+            float:left;
+        }
+
+        dd {
+            margin-left:70px;
+        }
+    }
 
 
 /* ---------------------------------------
 
-    0140 LOGINS
+    0140 Reviews
+        01410 Reviews
+        01420 Review
+----------------------------------------*/
+
+    .reviews {
+        .hspace;
+        ul.nav-pills {
+         li {
+                a {
+                    .btn-pronto;
+                    &:hover {
+                        .btn-pronto.inverse;
+                    }
+                }
+            &.disabled {
+                font-size:12px;
+                color:#eee;
+                padding:10px 15px;
+            }
+            }
+        }
+    }
+    
+    .review {
+        padding:20px 0px;
+
+        .date {
+            margin:0px;
+        }
+
+        h1 {
+            margin-top:0px;
+            margin-bottom:0.5em;
+        }
+
+        .legend {
+            color:@gray-light;
+        }
+
+        .comment {
+            clear:both;
+            margin:0.5em 0em;
+        }
+
+        border-bottom:1px solid @gray-lighter;
+
+    }
+
+/* ---------------------------------------
+
+    0150 LOGINS
 
 ----------------------------------------*/
 
@@ -360,19 +465,16 @@
 
 /* ---------------------------------------
 
-    0150 SCHEDA
-        01500 Scheda Tweaks
-        01510 Map
-        01520 Address
-        01530 Options
+    0160 SCHEDA
+        01600 Scheda Tweaks
+        01610 Map
+        01620 Address
+        01630 Options
 
 
 ----------------------------------------*/
 
     .scheda {
-        h1 {
-            margin-bottom:0px;
-        }
         h2 {
             margin-top:5px;
         }
@@ -398,16 +500,24 @@
 
 
     .options {
-        background-color:@dark;
+        .dark;
         padding:5px;
         border-top:4px solid @primary;
         ul {
-            padding:5px;
+            padding:2px;
             &.nav-pills {
-                li {
+             li {
                     a {
-                        .onDark;
+                        .btn-pronto;
+                        &:hover {
+                            .btn-pronto.inverse;
+                        }
                     }
+                &.disabled {
+                    font-size:12px;
+                    color:#eee;
+                    padding:10px 15px;
+                }
                 }
             }
         }

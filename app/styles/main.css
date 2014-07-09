@@ -213,8 +213,9 @@ a {
     0120 LISTINGS (search results)
         01210 Sponsored Listings
     0130 Ratings system
-    0140 Logins
-    0150 SCHEDA
+    0140 Reviews
+    0150 Logins
+    0160 SCHEDA
         
 
 */
@@ -223,9 +224,15 @@ a {
     000 MIXINS
 
 ----------------------------------------*/
+/* Remove padding from columns */
+.fullwidth .col* {
+  padding: 0px;
+}
 /* ---------------------------------------
 
-    010 QN Bar
+    010 Header
+        0110 QN
+        0120 Testata
 
 
 ----------------------------------------*/
@@ -239,6 +246,11 @@ a {
   background-position: center center;
   margin-left: 10px;
 }
+/* Testata */
+.testata {
+  padding: 10px;
+  background-color: #333333;
+}
 /* ---------------------------------------
 
     020 Branding
@@ -250,17 +262,27 @@ a {
 
 ----------------------------------------*/
 .logo {
+  /* Use background images defaults */
   background-image: url('../images/logo.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: center center;
+  /* Set a default height */
   height: 120px;
+  /* Make some spacing inside the logo box so it doesnt touch the sides */
+  padding: 10px;
+  /* Variations */
 }
 .logo.dark {
   background-image: url('../images/logo_solo_nero.png');
 }
 .logo.small {
-  width: 129px;
-  height: 104px;
+  height: 50px;
+}
+.logo.vsmall {
+  height: 60px;
+  /* Make it smaller */
+  background-size: 20%;
 }
 .logo.solo {
   background-image: url('../images/bee.png');
@@ -285,20 +307,25 @@ a {
 .search.filled {
   background-color: #fecf0f;
 }
-.search.filled .logo {
-  height: 60px;
-  background-color: black;
-  background-image: url('../images/logo_solo_nero.png');
-  /* Make it smaller */
-  background-position: center center;
-  background-size: 20%;
-}
 /* ---------------------------------------
 
     040 Buttons
-
+        0400 Pronto buttons
+        0410 Google Play
 
 ----------------------------------------*/
+/* Button Style for Pronto on Dark */
+.btn-pronto {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 11px;
+  background-color: #595959;
+  color: #fed942;
+}
+.btn-pronto.inverse {
+  background-color: #fecf0f;
+  color: #333333;
+}
 .button.googleplay {
   background-image: url('../images/googleplay.png');
   background-size: 100%;
@@ -327,6 +354,9 @@ ul.list-inline.dividers li:last-child {
   border-right: none;
   padding-right: 0em;
   margin-right: 0em;
+}
+ul.list-inline.inline {
+  display: inline-block;
 }
 ul .list-title {
   text-transform: uppercase;
@@ -424,8 +454,15 @@ ul .list-title {
         01320 Stars
 
 ----------------------------------------*/
+.user-ratings {
+  text-align: center;
+  padding: 10px;
+}
+.user-ratings.large {
+  font-size: 24px;
+}
 .user-rating {
-  float: left;
+  display: inline-block;
   margin-right: 15px;
   color: #fecf0f;
 }
@@ -438,9 +475,62 @@ ul .list-title {
 .stars .glyphicon.active {
   color: #fecf0f;
 }
+.ratings dt {
+  float: left;
+}
+.ratings dd {
+  margin-left: 70px;
+}
 /* ---------------------------------------
 
-    0140 LOGINS
+    0140 Reviews
+        01410 Reviews
+        01420 Review
+----------------------------------------*/
+.reviews {
+  padding: 0px 20px;
+}
+.reviews ul.nav-pills li a {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 11px;
+  background-color: #595959;
+  color: #fed942;
+}
+.reviews ul.nav-pills li a.inverse {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.reviews ul.nav-pills li a:hover {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.reviews ul.nav-pills li.disabled {
+  font-size: 12px;
+  color: #eee;
+  padding: 10px 15px;
+}
+.review {
+  padding: 20px 0px;
+  border-bottom: 1px solid #eeeeee;
+}
+.review .date {
+  margin: 0px;
+}
+.review h1 {
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+}
+.review .legend {
+  color: #999999;
+}
+.review .comment {
+  clear: both;
+  margin: 0.5em 0em;
+}
+/* ---------------------------------------
+
+    0150 LOGINS
 
 ----------------------------------------*/
 .logins {
@@ -457,17 +547,14 @@ ul .list-title {
 }
 /* ---------------------------------------
 
-    0150 SCHEDA
-        01500 Scheda Tweaks
-        01510 Map
-        01520 Address
-        01530 Options
+    0160 SCHEDA
+        01600 Scheda Tweaks
+        01610 Map
+        01620 Address
+        01630 Options
 
 
 ----------------------------------------*/
-.scheda h1 {
-  margin-bottom: 0px;
-}
 .scheda h2 {
   margin-top: 5px;
 }
@@ -488,19 +575,36 @@ ul .list-title {
   color: black;
 }
 .options {
-  background-color: #333333;
+  background: #333333;
+  color: #999999;
   padding: 5px;
   border-top: 4px solid #fecf0f;
 }
+.options a {
+  color: #999999;
+}
 .options ul {
-  padding: 5px;
+  padding: 2px;
 }
 .options ul.nav-pills li a {
-  background-color: #555;
-  color: #fecf0f;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 11px;
+  background-color: #595959;
+  color: #fed942;
 }
-.options ul.nav-pills li a a {
-  color: #fecf0f;
+.options ul.nav-pills li a.inverse {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.options ul.nav-pills li a:hover {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.options ul.nav-pills li.disabled {
+  font-size: 12px;
+  color: #eee;
+  padding: 10px 15px;
 }
 /* Layout Tweaks */
 /* 
@@ -510,7 +614,7 @@ SM
 Styles up to small devices
 
 */
-/* Add Padding to containers */
-section.body {
+/* Add a nice padding to mobile views (rows) */
+.hspace {
   padding: 0px 20px;
 }

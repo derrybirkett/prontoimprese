@@ -55,8 +55,11 @@
         </header>
 
         <section class="search filled">
-            <!-- -->
-            <div class="logo dark"></div>
+
+            <!-- Testata -->
+            <div class="testata">
+                <div class="logo dark small"></div>
+            </div>
 
             <!-- Seearch Box -->
             <div class="search-box">
@@ -86,30 +89,35 @@
 
             <section>
                 <article class="scheda">
-                    <figure class="mappa"></figure>
-                    <h1>Ristorante Marina di Niside</h1>
-                    <h2>Ristorante - Milano</h2>
-                    <aside class="address">
-                        <p><strong>Indirizzo:</strong>Via Sauro, 2/E - Barazate (MI)</p>
-                        <p><strong>Telefono:</strong>02 2879898</p>
-                        <p><strong>Fax:</strong>02 8789878</p>
-                    </aside>
+                        <figure class="mappa"></figure>
+                        <div class="hspace">
+                            <h1>Ristorante Marina di Niside</h1>
+                            <h2>Ristorante - Milano</h2>
+                            <aside class="address">
+                                <p><strong>Indirizzo:</strong>Via Sauro, 2/E - Barazate (MI)</p>
+                                <p><strong>Telefono:</strong>02 2879898</p>
+                                <p><strong>Fax:</strong>02 8789878</p>
+                            </aside>
+                        </div>
                     <aside class="options">
                         <ul class="nav nav-pills">
                             <li><a href="#">Aggiungi ai preferiti</a></li>
                         </ul>
 
                         <ul class="nav nav-pills sharing">
-                            <li>Condividi via:</li>
+                            <li class="disabled">Condividi via:</li>
                             <li><a href="#">Mail</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-twitter"></span></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                         </ul>
                     </aside>
 
-                    <section class="reviews">
+                    <section class="rating">
                         <aside class="user-ratings large">
                             <div class="user-rating">3.2</div>
-                            <ul class="stars list-inline">
+                            <ul class="stars list-inline inline">
                                     <li><span class="glyphicon glyphicon-star active"></span></li>
                                     <li><span class="glyphicon glyphicon-star active"></span></li>
                                     <li><span class="glyphicon glyphicon-star active"></span></li>
@@ -117,24 +125,27 @@
                                     <li><span class="glyphicon glyphicon-star"></span></li>
                                 </ul>
                         </aside>
+                    </section>
 
+                    <section class="reviews">
                         <!-- Tabs -->
                         <ul class="nav nav-pills">
-                            <li>79 Recensioni</li>
+                            <li><a href="/">79 Recensioni</a></li>
                             <li><a href="#">Scrivi Recensione</a></li>
                         </ul>
 
                         <!-- Reviews -->
                         <section class="latest-reviews">
+
                             <!-- Review -->
                             <article class="review">
-                                <p class="date">Gennaio 2014</p>
+                                <p class="date small">Gennaio 2014</p>
                                 <h1>Marino</h1>
                                 <aside class="ratings">
                                    <!-- Rating -->
                                    <dl class="dl-horizontal">
-                                        <dt class="col-xs-2">Prezzo</dt>
-                                        <dd class="col-xs-10">
+                                        <dt class="">Prezzo</dt>
+                                        <dd class="">
                                             <ul class="stars list-inline">
                                                     <li><span class="glyphicon glyphicon-star active"></span></li>
                                                     <li><span class="glyphicon glyphicon-star active"></span></li>
@@ -143,11 +154,8 @@
                                                     <li><span class="glyphicon glyphicon-star"></span></li>
                                                 </ul>
                                         </dd>
-                                   </dl> 
-                                   <!-- Rating -->
-                                   <dl class="dl-horizontal">
-                                        <dt class="col-xs-2">Qualità</dt>
-                                        <dd class="col-xs-10">
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
                                             <ul class="stars list-inline">
                                                     <li><span class="glyphicon glyphicon-star active"></span></li>
                                                     <li><span class="glyphicon glyphicon-star active"></span></li>
@@ -156,11 +164,8 @@
                                                     <li><span class="glyphicon glyphicon-star"></span></li>
                                                 </ul>
                                         </dd>
-                                   </dl> 
-                                   <!-- Rating -->
-                                   <dl class="dl-horizontal">
-                                        <dt class="col-xs-2">Servizio</dt>
-                                        <dd class="col-xs-10">
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
                                             <ul class="stars list-inline">
                                                     <li><span class="glyphicon glyphicon-star active"></span></li>
                                                     <li><span class="glyphicon glyphicon-star active"></span></li>
@@ -172,7 +177,51 @@
                                    </dl> 
                                 </aside>
                                 <p class="comment">
-                                <span class="legend">Ha detto:</span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                <span class="legend">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                </p>
+                            </article>
+
+                            <!-- Review -->
+                            <article class="review">
+                                <p class="date small">Gennaio 2014</p>
+                                <h1>Marino</h1>
+                                <aside class="ratings">
+                                   <!-- Rating -->
+                                   <dl class="dl-horizontal">
+                                        <dt class="">Prezzo</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star active"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                   </dl> 
+                                </aside>
+                                <p class="comment">
+                                <span class="legend">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
                                 </p>
                             </article>
                         </section>
