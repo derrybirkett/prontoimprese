@@ -151,13 +151,22 @@ h2 {
 }
 /* ---------------------------------------
 
+    030 Body
+
+
+----------------------------------------*/
+p {
+  font-weight: 200;
+}
+p.large {
+  font-size: 18px;
+}
+/* ---------------------------------------
+
     040 Links
 
 
 ----------------------------------------*/
-a {
-  color: #333333;
-}
 /* ---------------------------------------
 
     060 Listings
@@ -168,12 +177,52 @@ a {
 
 
 ----------------------------------------*/
+.listings {
+  /* Listings Header and intro */
+  /* Listing */
+}
+.listings header.intro h1 {
+  margin-bottom: 0px;
+}
+.listings header.intro p {
+  font-size: 13px;
+  font-weight: 200;
+  margin: 5px 0px;
+}
+.listings .h3 {
+  margin-bottom: 0px;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Sponsor Headings */
+.sponsor-label {
+  background: #fecf0f;
+  color: #555555;
+  padding: 5px;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 13px;
+}
+/* Meta */
 .meta {
   text-transform: uppercase;
   font-size: 12px;
 }
 .meta a {
-  color: #999999;
+  color: #555555;
+}
+/* ---------------------------------------
+
+    XX Minisito
+
+
+----------------------------------------*/
+.minisito h1 {
+  font-size: 38px;
+  color: #fecf0f;
+  margin-bottom: 0px;
 }
 /* 
 
@@ -216,6 +265,7 @@ a {
     0140 Reviews
     0150 Logins
     0160 SCHEDA
+    0170 MINISITO
         
 
 */
@@ -325,6 +375,13 @@ a {
 .btn-pronto.inverse {
   background-color: #fecf0f;
   color: #333333;
+}
+/* Big round buttons here */
+.btn-round {
+  margin-right: 20px;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
 }
 .button.googleplay {
   background-image: url('../images/googleplay.png');
@@ -444,22 +501,26 @@ ul .list-title {
 /* ---------------------------------------
 
     0120 Listings (search results)
-
+        01210 Sponsor Header
 
 ----------------------------------------*/
+.listings .meta {
+  margin-bottom: 0px;
+}
 /* ---------------------------------------
 
     0130 Ratings
         01310 User Rating
         01320 Stars
+        01330 Widget Simple
 
 ----------------------------------------*/
 .user-ratings {
-  text-align: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .user-ratings.large {
   font-size: 24px;
+  text-align: center;
 }
 .user-rating {
   display: inline-block;
@@ -469,10 +530,12 @@ ul .list-title {
 .stars li {
   padding: 0px;
 }
-.stars .glyphicon {
+.stars .glyphicon,
+.stars .fa {
   color: #555555;
 }
-.stars .glyphicon.active {
+.stars .glyphicon.active,
+.stars .fa.active {
   color: #fecf0f;
 }
 .ratings dt {
@@ -480,6 +543,16 @@ ul .list-title {
 }
 .ratings dd {
   margin-left: 70px;
+}
+.ratings-widget {
+  margin: 20px;
+}
+.ratings-widget.simple {
+  padding: 5px;
+  background-color: #eeeeee;
+}
+.ratings-widget ul {
+  margin-bottom: 0px;
 }
 /* ---------------------------------------
 
@@ -534,7 +607,6 @@ ul .list-title {
 
 ----------------------------------------*/
 .logins {
-  margin: 20px 0px;
   text-align: center;
 }
 .logins ul li {
@@ -605,6 +677,23 @@ ul .list-title {
   font-size: 12px;
   color: #eee;
   padding: 10px 15px;
+}
+/* ---------------------------------------
+
+    0170 MINISITO
+
+
+----------------------------------------*/
+.minisito {
+  /* */
+}
+.minisito .mappa {
+  border: 4px solid #fecf0f;
+  height: 250px;
+  width: 100%;
+}
+.minisito .description {
+  padding: 20px 0px;
 }
 /* Layout Tweaks */
 /* 

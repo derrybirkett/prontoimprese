@@ -55,26 +55,28 @@
         </header>
 
         <section class="search filled">
-            <!-- -->
-            <div class="logo dark"></div>
+
+            <!-- Testata -->
+            <div class="testata">
+                <div class="logo dark small"></div>
+            </div>
 
             <!-- Seearch Box -->
             <div class="search-box">
                 <form>
                     <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                        <span class="input-group-addon"><span class="fa fa-search"></span></span>
                         <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
                     </div>
                     <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+                        <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
                         <input type="text" class="form-control" placeholder="Dove?">
                     </div>
-                    <button type="button" class="btn btn-lg btn-warning btn-block"><span class="glyphicon glyphicon-play"></span></button>
+                    <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
                 </form>
             </div>
-        </section>
+            
 
-        <section class="body">
             <!-- Utility Login -->
             <div class="logins">
                 <ul class="breadcrumb">
@@ -84,17 +86,21 @@
                 </ul> 
             </div>
 
+
+        </section>
+
+        <section class="body">
             <!-- Search Results -->
-            <section class="listings">
-                <header>
-                    <h1 class="h1">
-                        Search Results Title 
+            <section class="listings hspace">
+                <header class="intro">
+                    <h1>
+                        Ristorante Pesce
                     </h1>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                 </header>
 
                 <section class="listing-class sponsors">
-                    <header><span>Sponsor Milano e provincia</span></header>
+                    <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
 
                     <!-- Listing -->
                     <article class="listing sponsor">
@@ -105,12 +111,12 @@
                         </ul>
                         <aside class="user-ratings">
                             <div class="user-rating">3.2</div>
-                            <ul class="stars list-inline">
-                                    <li><span class="glyphicon glyphicon-star active"></span></li>
-                                    <li><span class="glyphicon glyphicon-star active"></span></li>
-                                    <li><span class="glyphicon glyphicon-star active"></span></li>
-                                    <li><span class="glyphicon glyphicon-star"></span></li>
-                                    <li><span class="glyphicon glyphicon-star"></span></li>
+                            <ul class="stars list-inline inline">
+                                    <li><span class="fa fa-star active"></span></li>
+                                    <li><span class="fa fa-star active"></span></li>
+                                    <li><span class="fa fa-star active"></span></li>
+                                    <li><span class="fa fa-star"></span></li>
+                                    <li><span class="fa fa-star"></span></li>
                             </ul>
                         </aside>
                     </article>
@@ -123,15 +129,17 @@
             <div class="banner vetrina"></div>
 
             <!-- Pagination -->
-            <ul class="pagination">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
-            </ul>
+            <div class="centered">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
 
             <!-- Ad -->
             <div class="banner island"></div>

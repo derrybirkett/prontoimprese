@@ -39,6 +39,7 @@
     0140 Reviews
     0150 Logins
     0160 SCHEDA
+    0170 MINISITO
         
 
 */
@@ -175,6 +176,14 @@
             background-color:@primary;
             color:@dark;
         }
+    }
+
+    /* Big round buttons here */
+    .btn-round {
+        margin-right:20px;   
+        border-radius:25px;
+        height:50px;
+        width:50px;
     }
 
 
@@ -328,13 +337,16 @@
 /* ---------------------------------------
 
     0120 Listings (search results)
-
+        01210 Sponsor Header
 
 ----------------------------------------*/
 
     .listings {
-        
+        .meta {
+            margin-bottom:0px;   
+        }
     }
+
 
 
 
@@ -343,15 +355,16 @@
     0130 Ratings
         01310 User Rating
         01320 Stars
+        01330 Widget Simple
 
 ----------------------------------------*/
 
 
     .user-ratings {
-        .centered;
-        padding:10px;
+        padding:10px 0px;
         &.large {
             font-size:24px;
+            .centered;
         }
     }
 
@@ -365,7 +378,7 @@
         li {
             padding:0px;
         }
-        .glyphicon {
+        .glyphicon, .fa {
             color:@gray;
             &.active {
                 color:@primary;
@@ -384,6 +397,14 @@
         }
     }
 
+    .ratings-widget {
+        margin:20px;
+        &.simple {
+            padding:5px;
+            background-color:@gray-lighter;
+        }
+        ul { margin-bottom:0px; }
+    }
 
 /* ---------------------------------------
 
@@ -443,7 +464,6 @@
 ----------------------------------------*/
 
     .logins {
-        margin:20px 0px;
         .centered;
 
         ul {
@@ -522,3 +542,29 @@
             }
         }
     }
+
+
+
+/* ---------------------------------------
+
+    0170 MINISITO
+
+
+----------------------------------------*/
+
+   .minisito {
+        
+        /* */
+        .mappa {
+            border:4px solid @primary;
+            height:250px;
+            width:100%; 
+        }
+
+        .description {
+            padding:20px 20px;
+        }
+
+   }
+
+
