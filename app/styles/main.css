@@ -582,6 +582,10 @@ ul .list-title {
 .ratings-widget ul {
   margin-bottom: 0px;
 }
+.ratings-widget ul a.btn-pronto:hover {
+  background-color: #fecf0f;
+  color: #333333;
+}
 /* ---------------------------------------
 
     0140 Reviews
