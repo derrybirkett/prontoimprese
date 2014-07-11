@@ -278,7 +278,8 @@ p.large {
 
     010 Header
         0110 QN
-        0120 Testata
+        0120 Navnar style tweaks
+        0130 Testata
 
 
 ----------------------------------------*/
@@ -291,6 +292,11 @@ p.large {
   background-repeat: no-repeat;
   background-position: center center;
   margin-left: 10px;
+}
+/* Style navbar */
+.navbar-default .navbar-toggle,
+.navbar-default:focus .navbar-toggle:focus {
+  border: 0px;
 }
 /* Testata */
 .testata {
@@ -751,4 +757,8 @@ Styles up to small devices
 }
 .vspace {
   padding: 20px 0px;
+}
+/* Remove padding */
+.navbar-nav {
+  margin-top: 0px;
 }
