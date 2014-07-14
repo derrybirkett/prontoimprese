@@ -12,7 +12,6 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
         <!-- endbower -->
         <!-- endbuild -->
@@ -24,7 +23,7 @@
         <!-- endbuild -->
 
     </head>
-    <body>
+    <body class="home">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -44,80 +43,96 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="list.html">List</a></li>
+                            <li><a href="scheda.html">Scheda</a></li>
+                            <li><a href="minisito.html">Minisito</a></li>
+                        </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
 
-        <section class="search">
+        <section class="search container">
 
             <!-- Testata -->
             <div class="logo"></div>
 
             <!-- Search -->
-            <div class="search-box hspace">
+            <div class="search-box row">
                 <form>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-                        <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                            <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                        </div>
                     </div>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
-                        <input type="text" class="form-control" placeholder="Dove?">
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                            <input type="text" class="form-control" placeholder="Dove?">
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-lg btn-warning btn-block"><span class="glyphicon glyphicon-play"></span></button>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                    </div>
                 </form>
             </div>
 
         </section>
 
         <!-- Utility Login -->
-        <div class="logins hspace">
-            <ul class="breadcrumb">
-                <li><a href="#">Login Utente</a></li>
-                <li><a href="#">Login Impresa</a></li>
-                <li><a href="#">Fai Pubblicità con noi</a></li>
-            </ul> 
+        <div class="container">
+            <div class="logins col-md-12">
+                <ul class="breadcrumb">
+                    <li><a href="#">Login Utente</a></li>
+                    <li><a href="#">Login Impresa</a></li>
+                    <li><a href="#">Fai Pubblicità con noi</a></li>
+                </ul> 
+            </div>
         </div>
 
         <!-- AD -->
-        <div class="scaricare centered">
-            <div class="banner island"></div>
-            <p class="caps">scarica la app gratuita <strong>Pronto Città</strong></p>
-            <div class="button googleplay"></div>
-            <div class="mobiles">
-                <img src="images/mobiles.png" />
+        <div class="container">
+            <div class="scaricare centered col-md-12">
+                <div class="banner island"></div>
+                <p class="caps">scarica la app gratuita <strong>Pronto Città</strong></p>
+                <div class="button googleplay"></div>
+                <div class="mobiles">
+                    <img src="images/mobiles.png" />
+                </div>
             </div>
         </div>
 
         <!-- -->
         <div class="prefooter regions primary">
-            <ul class="list-inline">
-                <li>REGIONS:</li>
-                <li><a href="">Abruzzo</ar</li>
-                <li><a href="">Basilicata</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-                <li><a href="">Abruzzo</ar</li>
-                <li><a href="">Abruzzo</ar</li>
-                <li><a href="">Basilicata</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-                <li><a href="">Basilicata</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-            </ul>
+            <div class="container">
+                <ul class="list-inline">
+                    <li>REGIONS:</li>
+                    <li><a href="">Abruzzo</ar</li>
+                    <li><a href="">Basilicata</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                    <li><a href="">Abruzzo</ar</li>
+                    <li><a href="">Abruzzo</ar</li>
+                    <li><a href="">Basilicata</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                    <li><a href="">Basilicata</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- -->
-        <div class="footer">
-            <div class="logo dark small center-block"></div>
-            <div class="logo solo center-block"></div>
+        <div class="footer row">
+            <div class="logos col-md-3">
+                <div class="logo dark small center-block"></div>
+                <div class="logo solo center-block"></div>
+            </div>
             
-            <section class="quick-links">
+            <section class="quick-links col-md-3">
                 <ul class="list-unstyled">
                     <li><a href="">Chi siamo</a></li>
                     <li><a href="">Faq</a></li>
@@ -128,23 +143,25 @@
                 </ul>    
             </section>
 
-            <div class="scaricare centered">
+            <div class="scaricare centered col-md-3">
                 <!-- <p>Scarica la app</p> -->
                 <div class="button googleplay"></div>
             </div>
 
-            <div class="utility logins">
-                <ul class="nav nav-pills">
-                    <li><a href="">Login Utente</a></li>
-                    <li><a href="">Login Imprese</a></li>
-                </ul>
-            </div>
+            <div class="col-md-3">
+                <div class="utility logins">
+                    <ul class="nav nav-pills">
+                        <li><a href="">Login Utente</a></li>
+                        <li><a href="">Login Imprese</a></li>
+                    </ul>
+                </div>
 
-            <p class="footnote">
-                Pronto s.r.l.<br />
-                PI 012543890 <br />
-                Pronto s.r.l. non garantisce niente
-            </p>
+                <p class="footnote">
+                    Pronto s.r.l.<br />
+                    PI 012543890 <br />
+                    Pronto s.r.l. non garantisce niente
+                </p>
+            </div>
 
         </div>
 
