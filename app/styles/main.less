@@ -14,8 +14,13 @@
     @import "typography.less";
     @import "components.less";
 
-    /* Less than Desktop */
+    /* Mobile and small */
     @import "sm.less";
 
-    /* Desktop */
-    @import "md.less";
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) { 
+        @import "md.less";
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: @screen-lg-min) {}

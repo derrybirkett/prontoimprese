@@ -6669,7 +6669,7 @@ ul .list-title {
   width: 100%;
   margin: 20px 0px;
 }
-/* Less than Desktop */
+/* Mobile and small */
 /* 
 
 SM
@@ -6689,8 +6689,9 @@ Styles up to small devices
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* Desktop */
-/* 
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* 
 
     MD.LESS
     -------
@@ -6702,43 +6703,45 @@ Styles up to small devices
     020 LIST
 
 */
-/* ---------------------------------------
+  /* ---------------------------------------
 
     000 COMPONENTS
         010 Search
 
 ----------------------------------------*/
-.search {
-  height: 50px;
-}
-/* remove vertical spacing on search */
-.search .search-box .input-group {
-  margin-bottom: 0px;
-}
-.filled .btn {
-  background-color: #555;
-  color: #fecf0f;
-}
-.filled .btn a {
-  color: #fecf0f;
-}
-/* ---------------------------------------
+  .search {
+    height: 50px;
+  }
+  /* remove vertical spacing on search */
+  .search .search-box .input-group {
+    margin-bottom: 0px;
+  }
+  .filled .btn {
+    background-color: #555;
+    color: #fecf0f;
+  }
+  .filled .btn a {
+    color: #fecf0f;
+  }
+  /* ---------------------------------------
 
     010 HOME
 
 
 ----------------------------------------*/
-.home {
-  /* Add some margin on the home above the logo and search  */
-  /* Home banner to right */
+  .home {
+    /* Add some margin on the home above the logo and search  */
+    /* Home banner to right */
+  }
+  .home .search .logo {
+    margin-top: 80px;
+  }
+  .home .banner.island {
+    float: right;
+  }
+  /* LIST */
+  .lista .search .logins {
+    display: none;
+  }
 }
-.home .search .logo {
-  margin-top: 80px;
-}
-.home .banner.island {
-  float: right;
-}
-/* LIST */
-.lista .search .logins {
-  display: none;
-}
+/* Large devices (large desktops, 1200px and up) */
