@@ -1,14 +1,64 @@
 /* 
 
-MD.LESS
--------
-Medium Devices (std desktop up)
+    MD.LESS
+    -------
+    Medium Devices (std desktop up)
+
+    000 COMPONENTS
+        010 Search
+    010 HOME
+    020 LIST
 
 */
 
-/* Home banner to right */
+
+
+
+
+/* ---------------------------------------
+
+    000 COMPONENTS
+        010 Search
+
+----------------------------------------*/
+
+    .search {
+        height:50px;
+    }
+
+    /* remove vertical spacing on search */    
+    .search .search-box .input-group {
+        margin-bottom:0px;
+    }
+
+    .filled .btn {
+        .onDark;
+    }
+
+
+/* ---------------------------------------
+
+    010 HOME
+
+
+----------------------------------------*/
 .home {
+
+   /* Add some margin on the home above the logo and search  */ 
+    .search {
+       .logo {
+            margin-top:80px;
+        } 
+    }
+
+    /* Home banner to right */
     .banner.island {
         float:right;
     }
+}
+
+
+/* LIST */
+.lista {
+    .search .logins { display:none; }
 }

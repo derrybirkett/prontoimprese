@@ -23,7 +23,7 @@
         <!-- endbuild -->
 
     </head>
-    <body>
+    <body class="lista">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -55,26 +55,35 @@
             </nav>
         </header>
 
-        <section class="search filled">
+        <section class="search">
 
             <!-- Testata -->
-            <div class="testata">
+            <div class="testata col-md-2">
                 <div class="logo dark small"></div>
             </div>
 
             <!-- Search Box -->
-            <div class="search-box">
+            <div class="search-box filled col-md-10">
+                <div class="row">
                 <form>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="fa fa-search"></span></span>
-                        <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                            <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                        </div>
                     </div>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
-                        <input type="text" class="form-control" placeholder="Dove?">
+
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                            <input type="text" class="form-control" placeholder="Dove?">
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                    </div>
                 </form>
+                </div>
             </div>
             
             <!-- Utility Login -->
