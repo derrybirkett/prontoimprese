@@ -35,6 +35,8 @@
     0110 Navbar
     0120 LISTINGS (search results)
         01210 Sponsored Listings
+        01220 Category List
+        01230 MiniScheda
     0130 Ratings system
     0140 Reviews
     0150 Logins
@@ -50,13 +52,27 @@
 
 ----------------------------------------*/
 
+    @padding: 30px;
+    @hspace: 30px;
+    @vspace: 30px;
+
+    .padded {
+        padding:@padding;
+    }
+
+    /* Add a nice padding to mobile views (rows) */
+    .hspace {  padding:0px @padding; }
+    .vspace {  padding:@padding 0px; }
+
+
+
 
 /* ---------------------------------------
 
     010 Header
-        0110 QN
-        0120 Navnar style tweaks
-        0130 Testata
+        01010 QN
+        01020 Navnar style tweaks
+        01030 Testata
 
 
 ----------------------------------------*/
@@ -391,8 +407,9 @@
 /* ---------------------------------------
 
     0120 Listings (search results)
-        01210 Sponsor Header
-
+        01210 Sponsored Listings
+        01220 Category List
+        01230 MiniScheda
 ----------------------------------------*/
 
     .listings {
@@ -401,12 +418,54 @@
         }
     }
 
+    /* Category list  */
+   .categories {
+        padding:1em 0em;
+        text-transform:uppercase;
+        font-size:11px;
+        .fa {
+            display:block;
+            padding:10px;
+            color:@gray-light;
+            font-size:24px;
+        }
+    } 
+
+    .minischeda {
+        margin-top:10px;
+
+        /* Images */
+        .featured-image {
+            height:200px;
+        }
+
+        h1 {
+            font-size:34px;
+        }
+
+        ul.nav-pills {
+         li {
+                a {
+                    .btn-pronto;
+                    &:hover {
+                        .btn-pronto.inverse;
+                    }
+                }
+            &.disabled {
+                font-size:12px;
+                color:#eee;
+                padding:10px 15px;
+            }
+            }
+        }
+    }
+
 
 
 
 /* ---------------------------------------
 
-    0130 Ratings
+0130 Ratings
         01310 User Rating
         01320 Stars
         01330 Widget Simple

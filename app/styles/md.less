@@ -11,10 +11,6 @@
 
 */
 
-
-
-
-
 /* ---------------------------------------
 
     000 COMPONENTS
@@ -42,23 +38,40 @@
 
 
 ----------------------------------------*/
-.home {
 
-   /* Add some margin on the home above the logo and search  */ 
-    .search {
-       .logo {
-            margin-top:80px;
-        } 
+    .home {
+
+       /* Add some margin on the home above the logo and search  */ 
+        .search {
+           .logo {
+                margin-top:80px;
+            } 
+        }
+
+        /* Home banner to right */
+        .banner.island {
+            float:right;
+        }
     }
 
-    /* Home banner to right */
-    .banner.island {
-        float:right;
+
+/* ---------------------------------------
+
+    020 LISTA
+
+
+----------------------------------------*/
+
+    .lista {
+        .search .logins { display:none; }
+
+        /* Make header left to text */
+        .intro { 
+            h1, p { 
+                display:inline;
+            }
+            h1 {
+                margin-right:1em;
+            }
+        }
     }
-}
-
-
-/* LIST */
-.lista {
-    .search .logins { display:none; }
-}

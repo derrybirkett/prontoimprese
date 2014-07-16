@@ -6177,6 +6177,8 @@ p.large {
     0110 Navbar
     0120 LISTINGS (search results)
         01210 Sponsored Listings
+        01220 Category List
+        01230 MiniScheda
     0130 Ratings system
     0140 Reviews
     0150 Logins
@@ -6190,12 +6192,22 @@ p.large {
     000 MIXINS
 
 ----------------------------------------*/
+.padded {
+  padding: 30px;
+}
+/* Add a nice padding to mobile views (rows) */
+.hspace {
+  padding: 0px 30px;
+}
+.vspace {
+  padding: 30px 0px;
+}
 /* ---------------------------------------
 
     010 Header
-        0110 QN
-        0120 Navnar style tweaks
-        0130 Testata
+        01010 QN
+        01020 Navnar style tweaks
+        01030 Testata
 
 
 ----------------------------------------*/
@@ -6416,7 +6428,7 @@ ul .list-title {
   padding: 10px 0px;
 }
 .prefooter {
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 80%;
 }
 /* ---------------------------------------
@@ -6428,7 +6440,7 @@ ul .list-title {
 .footer {
   background: #333333;
   color: #999999;
-  padding: 50px 20px;
+  padding: 50px 30px;
   font-size: 90%;
   /* Add some spacing around Google Play */
   /* Add space above logins in the footer */
@@ -6461,15 +6473,58 @@ ul .list-title {
 /* ---------------------------------------
 
     0120 Listings (search results)
-        01210 Sponsor Header
-
+        01210 Sponsored Listings
+        01220 Category List
+        01230 MiniScheda
 ----------------------------------------*/
 .listings .meta {
   margin-bottom: 0px;
 }
+/* Category list  */
+.categories {
+  padding: 1em 0em;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.categories .fa {
+  display: block;
+  padding: 10px;
+  color: #999999;
+  font-size: 24px;
+}
+.minischeda {
+  margin-top: 10px;
+  /* Images */
+}
+.minischeda .featured-image {
+  height: 200px;
+}
+.minischeda h1 {
+  font-size: 34px;
+}
+.minischeda ul.nav-pills li a {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 11px;
+  background-color: #595959;
+  color: #fed942;
+}
+.minischeda ul.nav-pills li a.inverse {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.minischeda ul.nav-pills li a:hover {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.minischeda ul.nav-pills li.disabled {
+  font-size: 12px;
+  color: #eee;
+  padding: 10px 15px;
+}
 /* ---------------------------------------
 
-    0130 Ratings
+0130 Ratings
         01310 User Rating
         01320 Stars
         01330 Widget Simple
@@ -6525,7 +6580,7 @@ ul .list-title {
         01420 Review
 ----------------------------------------*/
 .reviews {
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 .reviews ul.nav-pills li a {
   text-transform: uppercase;
@@ -6663,11 +6718,11 @@ ul .list-title {
   width: 100%;
 }
 .minisito .description {
-  padding: 20px 20px;
+  padding: 30px 30px;
 }
 .minisito .description img {
   width: 100%;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 /* Mobile and small */
 /* 
@@ -6677,13 +6732,6 @@ SM
 Styles up to small devices
 
 */
-/* Add a nice padding to mobile views (rows) */
-.hspace {
-  padding: 0px 20px;
-}
-.vspace {
-  padding: 20px 0px;
-}
 /* Remove padding */
 .navbar-nav {
   margin-top: 0px;
@@ -6739,9 +6787,24 @@ Styles up to small devices
   .home .banner.island {
     float: right;
   }
-  /* LIST */
+  /* ---------------------------------------
+
+    020 LISTA
+
+
+----------------------------------------*/
+  .lista {
+    /* Make header left to text */
+  }
   .lista .search .logins {
     display: none;
+  }
+  .lista .intro h1,
+  .lista .intro p {
+    display: inline;
+  }
+  .lista .intro h1 {
+    margin-right: 1em;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
