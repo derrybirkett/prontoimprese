@@ -21,8 +21,8 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-
     </head>
+
     <body class="lista">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -56,7 +56,6 @@
         </header>
 
         <section class="search">
-
             <!-- Testata -->
             <div class="testata col-md-2">
                 <div class="logo dark small"></div>
@@ -65,36 +64,35 @@
             <!-- Search Box -->
             <div class="search-box filled col-md-10">
                 <div class="row">
-                <form>
-                    <div class="col-md-5">
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon"><span class="fa fa-search"></span></span>
-                            <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                    <form>
+                        <div class="col-md-5">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                                <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-5">
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
-                            <input type="text" class="form-control" placeholder="Dove?">
+                        <div class="col-md-5">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                                <input type="text" class="form-control" placeholder="Dove?">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
-                    </div>
-                </form>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                        </div>
+                    </form>
                 </div>
             </div>
             
             <!-- Utility Login -->
-            <div class="logins">
+            <div class="logins hidden-md">
                 <ul class="breadcrumb">
                     <li><a href="#">Login Utente</a></li>
                     <li><a href="#">Login Impresa</a></li>
                     <li><a href="#">Fai Pubblicità con noi</a></li>
                 </ul> 
             </div>
-
         </section>
 
         <nav class="categories row hidden-sm hidden-xs">
@@ -303,8 +301,8 @@
             <!-- Right side -->
             <div class="col-md-6">
 
-                <!-- Minischeda -->
-                <article class="minischeda hidden-xs hidden-sm">
+                <!-- Scheda -->
+                <article class="scheda hidden-xs hidden-sm">
                     <aside class="scheda-images row">
                         <figure class="col-md-6 featured-image" style="background-image:url('http://lorempixel.com/400/200/food')">
                             <div class="legend">FOTO</div>
@@ -346,13 +344,11 @@
                 <div class="banner vetrina"></div>
             </div>
 
-
-
     </section><!-- body -->
 
-    <footer class="row">
+    <footer>
         <!-- Block Province -->
-        <div class="prefooter province grey">
+        <div class="prefooter province grey row">
             <ul class="list-inline">
                 <li><span class="list-title">Province:</span></li>
                 <li><a href="">Bergamo</ar</li>
@@ -371,7 +367,7 @@
         </div>
 
         <!-- Block Regioni -->
-        <div class="prefooter regions primary">
+        <div class="prefooter regions primary row">
             <ul class="list-inline">
                 <li><span class="list-title">Regioni:</span></li>
                 <li><a href="">Abruzzo</ar</li>
@@ -426,8 +422,8 @@
                     Pronto s.r.l. non garantisce niente
                 </p>
             </div>
-
         </div>
+    </footer>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -464,5 +460,6 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-</body>
+
+    </body>
 </html>

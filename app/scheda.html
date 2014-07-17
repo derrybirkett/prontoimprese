@@ -38,7 +38,7 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
-                              </button>
+                                </button>
                             <a class="navbar-brand qnlogo" href="/">&nbsp;</a>
                         </div>
 
@@ -50,35 +50,43 @@
                             <li><a href="scheda.html">Scheda</a></li>
                             <li><a href="minisito.html">Minisito</a></li>
                         </ul>
-                  </div><!-- /.navbar-collapse -->
+                    </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </header>
 
-        <section class="search filled">
-
+        <section class="search">
             <!-- Testata -->
-            <div class="testata">
+            <div class="testata col-md-2">
                 <div class="logo dark small"></div>
             </div>
 
-            <!-- Seearch Box -->
-            <div class="search-box">
+            <!-- Search Box -->
+            <div class="search-box filled col-md-10">
+                <div class="row">
                 <form>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="fa fa-search"></span></span>
-                        <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                            <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                        </div>
                     </div>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
-                        <input type="text" class="form-control" placeholder="Dove?">
-                    </div>
-                    <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
-                </form>
-            </div>
 
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                            <input type="text" class="form-control" placeholder="Dove?">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            
             <!-- Utility Login -->
-            <div class="logins">
+            <div class="logins hidden-md">
                 <ul class="breadcrumb">
                     <li><a href="#">Login Utente</a></li>
                     <li><a href="#">Login Impresa</a></li>
@@ -87,10 +95,25 @@
             </div>
         </section>
 
-        <section class="body">
+        <nav class="categories row hidden-sm hidden-xs">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+                <li><a href="/"><span class="fa fa-twitter"></span>Ristoranti</a></li>
+            </ul> 
+        </nav>
 
-            <section>
-                <article class="scheda">
+        <section class="body row">
+            <!-- Left side -->
+            <div class="col-md-6">
+
+                    <!-- Scheda -->
+                    <article class="scheda">
                         <figure class="mappa"></figure>
                         <div class="hspace">
                             <h1>Ristorante Marina di Niside</h1>
@@ -101,43 +124,44 @@
                                 <p><strong>Fax:</strong>02 8789878</p>
                             </aside>
                         </div>
-                    <aside class="options">
-                        <ul class="nav nav-pills">
-                            <li><a href="#">Aggiungi ai preferiti</a></li>
-                        </ul>
 
-                        <ul class="nav nav-pills sharing">
-                            <li class="disabled">Condividi via:</li>
-                            <li><a href="#">Mail</a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </aside>
+                        <!-- Options -->
+                        <aside class="options">
+                            <ul class="nav nav-pills">
+                                <li><a href="#">Aggiungi ai preferiti</a></li>
+                            </ul>
 
-                    <section class="rating">
-                        <aside class="user-ratings large">
-                            <div class="user-rating">3.2</div>
-                            <ul class="stars list-inline inline">
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                </ul>
+                            <ul class="nav nav-pills sharing">
+                                <li class="disabled">Condividi via:</li>
+                                <li><a href="#">Mail</a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
                         </aside>
-                    </section>
 
-                    <section class="reviews">
-                        <!-- Tabs -->
-                        <ul class="nav nav-pills">
-                            <li><a href="/">79 Recensioni</a></li>
-                            <li><a href="#">Scrivi Recensione</a></li>
-                        </ul>
+                        <!-- Scheda Rating -->
+                        <section class="rating">
+                            <aside class="user-ratings large">
+                                <div class="user-rating">3.2</div>
+                                    <ul class="stars list-inline inline">
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                            </aside>
+                        </section>
 
                         <!-- Reviews -->
-                        <section class="latest-reviews">
+                        <section class="reviews">
+                            <!-- Tabs -->
+                            <ul class="nav nav-pills">
+                                <li><a href="/">79 Recensioni</a></li>
+                                <li><a href="#">Scrivi Recensione</a></li>
+                            </ul>
 
                             <!-- Review -->
                             <article class="review">
@@ -227,59 +251,61 @@
                                 </p>
                             </article>
                         </section>
-                    </section>
-
-                </article>
-            </section>
-            
-            <!-- Pagination -->
-            <div class="centered">
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </div>
-
-            <!-- Ad -->
-            <div class="banner island"></div>
-
-            <!-- Search Results -->
-            <section class="listings hspace">
-
-                <section class="listing-class sponsors">
-                    <header><span class="sponsor-label principale">Sponsor Milano e provincia</span></header>
-
-                    <!-- Listing -->
-                    <article class="listing sponsor">
-                        <h1 class="h3"><a href="#">Listing Title</a></h1> 
-                        <ul class="meta list-inline">
-                            <li><a href="#">Mappa</a></li>
-                            <li><a href="#">Sito Web</a></li>
-                        </ul>
-                        <aside class="user-ratings">
-                            <div class="user-rating">3.2</div>
-                            <ul class="stars list-inline inline">
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                            </ul>
-                        </aside>
                     </article>
 
+                    <!-- Pagination -->
+                    <div class="centered">
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+
+            <!-- Right side -->
+            <div class="col-md-6">
+
+                <!-- Search Results -->
+                <section class="listings">
+                    <div class="listing-class sponsors">
+                        <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
+
+                        <!-- Listing -->
+                        <article class="listing sponsor">
+                            <h1 class="h3"><a href="#">Listing Title</a></h1> 
+                            <ul class="meta list-inline">
+                                <li><a href="#">Mappa</a></li>
+                                <li><a href="#">Sito Web</a></li>
+                            </ul>
+                            <aside class="user-ratings">
+                                <div class="user-rating">3.2</div>
+                                <ul class="stars list-inline inline">
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                </ul>
+                            </aside>
+                        </article>
+                    </div>
                 </section>
-            </section>
-    </section>
+
+                <!-- Ad -->
+                <div class="banner island"></div>
+
+            </div>
+        </section>
 
     <footer>
         <!-- Block Province -->
-        <div class="prefooter province grey">
+        <div class="prefooter province grey row">
             <ul class="list-inline">
                 <li><span class="list-title">Province:</span></li>
                 <li><a href="">Bergamo</ar</li>
@@ -298,7 +324,7 @@
         </div>
 
         <!-- Block Regioni -->
-        <div class="prefooter regions primary">
+        <div class="prefooter regions primary row">
             <ul class="list-inline">
                 <li><span class="list-title">Regioni:</span></li>
                 <li><a href="">Abruzzo</ar</li>
@@ -317,11 +343,13 @@
         </div>
 
         <!-- -->
-        <div class="footer">
-            <div class="logo dark small center-block"></div>
-            <div class="logo solo center-block"></div>
+        <div class="footer row">
+            <div class="logos col-md-3">
+                <div class="logo dark small center-block"></div>
+                <div class="logo solo center-block"></div>
+            </div>
             
-            <section class="quick-links">
+            <section class="quick-links col-md-3">
                 <ul class="list-unstyled">
                     <li><a href="">Chi siamo</a></li>
                     <li><a href="">Faq</a></li>
@@ -332,24 +360,25 @@
                 </ul>    
             </section>
 
-            <div class="scaricare centered">
+            <div class="scaricare centered col-md-3">
                 <!-- <p>Scarica la app</p> -->
                 <div class="button googleplay"></div>
             </div>
 
-            <div class="logins">
-                <ul class="nav nav-pills">
-                    <li><a href="">Login Utente</a></li>
-                    <li><a href="">Login Imprese</a></li>
-                </ul>
+            <div class="col-md-3">
+                <div class="utility logins">
+                    <ul class="nav nav-pills">
+                        <li><a href="">Login Utente</a></li>
+                        <li><a href="">Login Imprese</a></li>
+                    </ul>
+                </div>
+
+                <p class="footnote">
+                    Pronto s.r.l.<br />
+                    PI 012543890 <br />
+                    Pronto s.r.l. non garantisce niente
+                </p>
             </div>
-
-            <p class="footnote">
-                Pronto s.r.l.<br />
-                PI 012543890 <br />
-                Pronto s.r.l. non garantisce niente
-            </p>
-
         </div>
     </footer>
 
@@ -388,5 +417,5 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-</body>
+    </body>
 </html>

@@ -6131,6 +6131,7 @@ p.large {
   font-weight: 200;
   font-style: italic;
   font-size: 13px;
+  margin-top: 0px;
 }
 /* Meta */
 .meta {
@@ -6492,36 +6493,6 @@ ul .list-title {
   color: #999999;
   font-size: 24px;
 }
-.minischeda {
-  margin-top: 10px;
-  /* Images */
-}
-.minischeda .featured-image {
-  height: 200px;
-}
-.minischeda h1 {
-  font-size: 34px;
-}
-.minischeda ul.nav-pills li a {
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 11px;
-  background-color: #595959;
-  color: #fed942;
-}
-.minischeda ul.nav-pills li a.inverse {
-  background-color: #fecf0f;
-  color: #333333;
-}
-.minischeda ul.nav-pills li a:hover {
-  background-color: #fecf0f;
-  color: #333333;
-}
-.minischeda ul.nav-pills li.disabled {
-  font-size: 12px;
-  color: #eee;
-  padding: 10px 15px;
-}
 /* ---------------------------------------
 
 0130 Ratings
@@ -6646,8 +6617,37 @@ ul .list-title {
 
 
 ----------------------------------------*/
+.scheda {
+  /* Images */
+}
 .scheda h2 {
   margin-top: 5px;
+}
+.scheda .featured-image {
+  height: 200px;
+}
+.scheda h1 {
+  font-size: 34px;
+}
+.scheda ul.nav-pills li a {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 11px;
+  background-color: #595959;
+  color: #fed942;
+}
+.scheda ul.nav-pills li a.inverse {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.scheda ul.nav-pills li a:hover {
+  background-color: #fecf0f;
+  color: #333333;
+}
+.scheda ul.nav-pills li.disabled {
+  font-size: 12px;
+  color: #eee;
+  padding: 10px 15px;
 }
 .mappa {
   height: 150px;
@@ -6795,9 +6795,6 @@ Styles up to small devices
 ----------------------------------------*/
   .lista {
     /* Make header left to text */
-  }
-  .lista .search .logins {
-    display: none;
   }
   .lista .intro h1,
   .lista .intro p {
