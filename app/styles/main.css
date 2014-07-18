@@ -6203,6 +6203,11 @@ p.large {
 .vspace {
   padding: 30px 0px;
 }
+/* Small tricks */
+.halign {
+  display: inline-block;
+  margin-right: 25px;
+}
 /* ---------------------------------------
 
     010 Header
@@ -6749,6 +6754,7 @@ Styles up to small devices
         010 Search
     010 HOME
     020 LIST
+    040 Minisito
 
 */
   /* ---------------------------------------
@@ -6802,6 +6808,19 @@ Styles up to small devices
   }
   .lista .intro h1 {
     margin-right: 1em;
+  }
+  /* ---------------------------------------
+
+    040 MINISITO
+
+
+----------------------------------------*/
+  .minisito .mappa {
+    height: 340px;
+  }
+  .minisito .sharing {
+    display: inline-block;
+    margin-right: 25px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
