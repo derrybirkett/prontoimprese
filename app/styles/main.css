@@ -6094,6 +6094,9 @@ p.large {
         0510 Navbar
 
 ----------------------------------------*/
+li {
+  font-weight: 300;
+}
 /* ---------------------------------------
 
     060 Listings
@@ -6185,6 +6188,9 @@ p.large {
     0150 Logins
     0160 SCHEDA
     0170 MINISITO
+    0180 INDEXES
+        01810 Cities
+        01820 
         
 
 */
@@ -6380,7 +6386,7 @@ ul .list-title {
 ----------------------------------------*/
 .banner {
   background-color: #fecf0f;
-  margin: 10px 0px;
+  margin: 30px 0px;
 }
 .banner.island {
   width: 300px;
@@ -6483,6 +6489,9 @@ ul .list-title {
         01220 Category List
         01230 MiniScheda
 ----------------------------------------*/
+.intro {
+  margin-bottom: 1em;
+}
 .listings .meta {
   margin-bottom: 0px;
 }
@@ -6529,11 +6538,11 @@ ul .list-title {
 .stars .fa.active {
   color: #fecf0f;
 }
+.ratings .stars {
+  padding-left: 80px;
+}
 .ratings dt {
   float: left;
-}
-.ratings dd {
-  margin-left: 70px;
 }
 .ratings-widget {
   margin: 20px;
@@ -6729,6 +6738,34 @@ ul .list-title {
   width: 100%;
   margin: 30px 0px;
 }
+/* ---------------------------------------
+
+    0180 INDEXES
+        08180 Cities
+
+
+----------------------------------------*/
+ul.index {
+  background: #fecf0f;
+  text-align: center;
+  list-style: none;
+  padding: 1em 0em;
+  margin: 1em 0em;
+}
+ul.index a {
+  color: #333333;
+}
+ul.index li {
+  display: inline;
+}
+ul.index li a {
+  font-weight: 800;
+  font-size: 17px;
+  padding: 2px;
+}
+.index-list ul {
+  list-style: none;
+}
 /* Mobile and small */
 /* 
 
@@ -6764,7 +6801,7 @@ Styles up to small devices
 
 ----------------------------------------*/
   .search {
-    height: 50px;
+    min-height: 50px;
   }
   /* remove vertical spacing on search */
   .search .search-box .input-group {

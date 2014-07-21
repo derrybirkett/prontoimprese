@@ -42,6 +42,9 @@
     0150 Logins
     0160 SCHEDA
     0170 MINISITO
+    0180 INDEXES
+        01810 Cities
+        01820 
         
 
 */
@@ -283,7 +286,7 @@
 
    .banner {
         background-color:@primary;
-        margin:10px 0px;
+        margin:@vspace 0px;
         &.island {
             width:300px;
             height:250px;
@@ -414,6 +417,10 @@
         01230 MiniScheda
 ----------------------------------------*/
 
+    .intro {
+        margin-bottom:1em;
+    }
+
     .listings {
         .meta {
             margin-bottom:0px;   
@@ -475,12 +482,11 @@
 
     // Ratings list
     .ratings {
+        .stars {
+            padding-left:80px;
+    }
         dt {
             float:left;
-        }
-
-        dd {
-            margin-left:70px;
         }
     }
 
@@ -697,3 +703,34 @@
    }
 
 
+
+
+/* ---------------------------------------
+
+    0180 INDEXES
+        08180 Cities
+
+
+----------------------------------------*/
+
+    ul.index {
+        .primary;
+        text-align:center;
+        list-style:none;
+        padding:1em 0em;
+        margin:1em 0em;
+        li {
+            display:inline;
+            a {
+                font-weight:800;
+                font-size:17px;
+                padding:2px;
+            }
+        }
+    }
+
+    .index-list {
+        ul {
+            list-style:none;
+        }
+    } 
