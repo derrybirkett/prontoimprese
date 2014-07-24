@@ -9,10 +9,6 @@
     030 Paragraph (Body)
     040 Links
     050 Lists
-    060 Listings
-        0600 Basic Listing
-        0610 Sponsored
-
 
 */
 
@@ -104,60 +100,24 @@
     }
 
 
+
+
 /* ---------------------------------------
 
-    060 Listings
-        0600 
-        0610 Basic
-        0620 Sponsored
-        0630 Meta
-
+    060 GENERIC
 
 ----------------------------------------*/
 
-    .listings {
-
-        /* Listings Header and intro */
-        header.intro {
-            h1 {
-                margin-bottom:0px;
-            }
-            p {
-                font-size:13px;
-                font-weight:200;
-                margin:5px 0px;
-            }
-        }
-
-        /* Listing */
-        .h3 {
-            margin-bottom:0px;  
-            font-weight:200;
-            font-size:20px;
-            text-transform:uppercase;
-            letter-spacing:1px;
-        }
-    }
-
-    /* Sponsor Headings */
-    .sponsor-label {
-        background:@primary;
-        color:@gray;
-        padding:5px;
-        font-weight:200;
-        font-style:italic;
-        font-size:13px;
-        margin-top:0px;
-    }
-
-    /* Meta */
+    /* Small subtitle style, usually under a title */
     .meta {
         text-transform:uppercase;
         font-size:12px;
+        font-weight:400;
+        margin-bottom:0px;
         a {
             color:@gray;
         }
-
+        li {
+            font-weight:400;
+        }
     }
-
-

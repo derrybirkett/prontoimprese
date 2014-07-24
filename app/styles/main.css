@@ -279,12 +279,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #333333;
+  color: #1166dd;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #0d0d0d;
+  color: #0c4596;
   text-decoration: underline;
 }
 a:focus {
@@ -2188,7 +2188,7 @@ fieldset[disabled] .btn-info.active {
   background-color: #fff;
 }
 .btn-link {
-  color: #333333;
+  color: #1166dd;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -2209,7 +2209,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #0d0d0d;
+  color: #0c4596;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3415,7 +3415,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #333333;
+  border-color: #1166dd;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4336,7 +4336,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #333333;
+  color: #1166dd;
   background-color: #ffffff;
 }
 .nav-pills > li > a > .badge {
@@ -4401,7 +4401,7 @@ a.list-group-item.active > .badge,
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #333333;
+  border-color: #1166dd;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -5983,6 +5983,10 @@ Palette
 .primary a {
   color: #333333;
 }
+.primary.inverse {
+  background-color: #333333;
+  color: #fecf0f;
+}
 .dark {
   background: #333333;
   color: #999999;
@@ -6017,10 +6021,6 @@ Palette
     030 Paragraph (Body)
     040 Links
     050 Lists
-    060 Listings
-        0600 Basic Listing
-        0610 Sponsored
-
 
 */
 /* ---------------------------------------
@@ -6099,50 +6099,21 @@ li {
 }
 /* ---------------------------------------
 
-    060 Listings
-        0600 
-        0610 Basic
-        0620 Sponsored
-        0630 Meta
-
+    060 GENERIC
 
 ----------------------------------------*/
-.listings {
-  /* Listings Header and intro */
-  /* Listing */
-}
-.listings header.intro h1 {
-  margin-bottom: 0px;
-}
-.listings header.intro p {
-  font-size: 13px;
-  font-weight: 200;
-  margin: 5px 0px;
-}
-.listings .h3 {
-  margin-bottom: 0px;
-  font-weight: 200;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-/* Sponsor Headings */
-.sponsor-label {
-  background: #fecf0f;
-  color: #555555;
-  padding: 5px;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 13px;
-  margin-top: 0px;
-}
-/* Meta */
+/* Small subtitle style, usually under a title */
 .meta {
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 .meta a {
   color: #555555;
+}
+.meta li {
+  font-weight: 400;
 }
 /* 
 
@@ -6202,6 +6173,9 @@ li {
 .padded {
   padding: 30px;
 }
+.nopadding {
+  padding: 0px;
+}
 /* Add a nice padding to mobile views (rows) */
 .hspace {
   padding: 0px 30px;
@@ -6213,6 +6187,13 @@ li {
 .halign {
   display: inline-block;
   margin-right: 25px;
+}
+/* The old grid tricks */
+.first {
+  margin-left: 0px;
+}
+.last {
+  margin-right: 0px;
 }
 /* ---------------------------------------
 
@@ -6362,6 +6343,9 @@ ul.list-inline.dividers li {
   padding-right: 0.5em;
   margin-right: 0.5em;
 }
+ul.list-inline.dividers li:first-child {
+  margin-right: 0em;
+}
 ul.list-inline.dividers li:last-child {
   border-right: none;
   padding-right: 0em;
@@ -6428,6 +6412,9 @@ ul .list-title {
   text-align: center;
   line-height: 50px;
 }
+.gmap {
+  padding: 0px;
+}
 /* ---------------------------------------
 
     080 BLOCKS
@@ -6492,12 +6479,49 @@ ul .list-title {
 .intro {
   margin-bottom: 1em;
 }
-.listings .meta {
+.listings {
+  /* Listings Header and intro */
+}
+.listings header.intro h1 {
   margin-bottom: 0px;
+}
+.listings header.intro p {
+  font-size: 13px;
+  font-weight: 200;
+  margin: 5px 0px;
+}
+/* Listing item itself */
+.listing {
+  margin-top: 20px;
+  /* Add some padding above the user review here */
+}
+.listing .h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+.listing .h3 a {
+  color: #1166dd;
+}
+.listing .meta {
+  margin: 2px 0px;
+}
+.listing .user-ratings .stars {
+  font-size: 16px;
+}
+/* Sponsor Headings */
+.sponsor-label {
+  background: #fecf0f;
+  color: #555555;
+  padding: 5px;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 0px;
 }
 /* Category list  */
 .categories {
-  padding: 1em 0em;
   text-transform: uppercase;
   font-size: 11px;
 }
@@ -6507,6 +6531,20 @@ ul .list-title {
   color: #999999;
   font-size: 24px;
 }
+.categories .nav-justified > li > a {
+  color: #999999;
+}
+.contact-details {
+  color: #999999;
+}
+.contact-details p {
+  margin: 0px;
+  font-size: 12px;
+}
+.contact-details .fa {
+  font-size: 38px;
+  color: #999999;
+}
 /* ---------------------------------------
 
 0130 Ratings
@@ -6515,24 +6553,28 @@ ul .list-title {
         01330 Widget Simple
 
 ----------------------------------------*/
-.user-ratings {
-  padding: 10px 0px;
-}
 .user-ratings.large {
   font-size: 24px;
   text-align: center;
+}
+.user-ratings.large .stars {
+  font-size: 30px;
+  margin-right: 0.5em;
 }
 .user-rating {
   display: inline-block;
   margin-right: 15px;
   color: #fecf0f;
 }
+.user-rating.review-count a {
+  font-size: 18px;
+}
 .stars li {
   padding: 0px;
 }
 .stars .glyphicon,
 .stars .fa {
-  color: #555555;
+  color: #999999;
 }
 .stars .glyphicon.active,
 .stars .fa.active {
@@ -6633,6 +6675,7 @@ ul .list-title {
 ----------------------------------------*/
 .scheda {
   /* Images */
+  /* Foto legends (little tags over fotos) */
 }
 .scheda h2 {
   margin-top: 5px;
@@ -6641,7 +6684,11 @@ ul .list-title {
   height: 200px;
 }
 .scheda h1 {
+  margin-top: 0px;
   font-size: 34px;
+}
+.scheda .user-ratings {
+  text-align: left;
 }
 .scheda ul.nav-pills li a {
   text-transform: uppercase;
@@ -6662,6 +6709,15 @@ ul .list-title {
   font-size: 12px;
   color: #eee;
   padding: 10px 15px;
+}
+.scheda .legend {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 7px;
+  font-size: 11px;
+  background-color: #333333;
+  color: #fecf0f;
 }
 .mappa {
   height: 150px;
@@ -6754,6 +6810,10 @@ ul.index {
 }
 ul.index a {
   color: #333333;
+}
+ul.index.inverse {
+  background-color: #333333;
+  color: #fecf0f;
 }
 ul.index li {
   display: inline;
