@@ -136,6 +136,7 @@
                             </ul>
                         </div>
 
+
                         <!-- Options -->
                         <aside class="options">
                             <div class="row">
@@ -158,117 +159,116 @@
                             </div>
                         </aside>
 
+                        <!-- Reviews -->
+                        <section class="reviews">
+
+                            <!-- Scheda Rating -->
+                            <section class="rating">
+                                <aside class="user-ratings large">
+                                    <div class="user-rating">3.2</div>
+                                        <ul class="stars list-inline inline">
+                                            <li><span class="fa fa-star active"></span></li>
+                                            <li><span class="fa fa-star active"></span></li>
+                                            <li><span class="fa fa-star active"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                        </ul>
+                                        <div class="user-rating review-count">
+                                            <a href="/">79 recensioni</a>
+                                        </div>
+                                        <a href="/" class="btn btn-pronto">Scrivi Recensione</a>
+                                </aside>
+                            </section>
+
+                            <!-- Review -->
+                            <article class="review">
+                                <p class="date small">Gennaio 2014</p>
+                                <h1>Marino</h1>
+                                <aside class="ratings">
+                                   <!-- Rating -->
+                                   <dl class="">
+                                        <dt class="">Prezzo</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                   </dl> 
+                                </aside>
+                                <p class="comment">
+                                <span class="legend">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                </p>
+                            </article>
+
+                            <!-- Review -->
+                            <article class="review">
+                                <p class="date small">Gennaio 2014</p>
+                                <h1>Marino</h1>
+                                <aside class="ratings">
+                                   <!-- Rating -->
+                                   <dl class="">
+                                        <dt class="">Prezzo</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                   </dl> 
+                                </aside>
+                                <p class="comment">
+                                <span class="legend">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                </p>
+                            </article>
+                        </section>
                     </article>
-
-                    <!-- Reviews -->
-                    <section class="reviews">
-
-                        <!-- Scheda Rating -->
-                        <aside class="rating user-ratings large">
-                            <div class="user-rating">3.2</div>
-                                <ul class="stars list-inline inline">
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                </ul>
-                                <div class="user-rating review-count">
-                                    <a href="/">79 recensioni</a>
-                                </div>
-                                <a href="/" class="btn btn-pronto">Scrivi Recensione</a>
-                        </aside>
-
-                        <!-- Review -->
-                        <article class="review">
-                            <p class="date small">Gennaio 2014</p>
-                            <h1>Marino</h1>
-                            <aside class="ratings">
-                               <!-- Rating -->
-                               <dl class="">
-                                    <dt class="">Prezzo</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                               </dl> 
-                            </aside>
-                            <p class="comment">
-                            <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
-                            </p>
-                        </article>
-
-                        <!-- Review -->
-                        <article class="review">
-                            <p class="date small">Gennaio 2014</p>
-                            <h1>Marino</h1>
-                            <aside class="ratings">
-                               <!-- Rating -->
-                               <dl class="">
-                                    <dt class="">Prezzo</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                               </dl> 
-                            </aside>
-                            <p class="comment">
-                            <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
-                            </p>
-                        </article>
-
-                    </section>
-
 
                     <!-- Pagination -->
                     <div class="centered">
