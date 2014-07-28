@@ -14,8 +14,10 @@
     @import "typography.less";
     @import "components.less";
 
-    /* Mobile and small */
-    @import "sm.less";
+    /* Mobile and small only */
+    @media (max-width: @screen-sm-max) {
+        @import "sm.less";
+    }
 
     /* Medium devices (desktops, 992px and up) */
     @media (min-width: @screen-md-min) { 

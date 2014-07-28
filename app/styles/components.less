@@ -20,6 +20,7 @@
         0420 Google Play Store
     050 Lists
         0510 Inline
+        0520 Breadcrumbs
     060 Banners
         0610 Island
         0620 Vetrina
@@ -45,6 +46,7 @@
     0180 INDEXES
         01810 Cities
         01820 
+    0190 WIDGETS
         
 
 */
@@ -63,8 +65,14 @@
     .nopadding  { padding:0px; }
 
     /* Add a nice padding to mobile views (rows) */
-    .hspace {  padding:0px @padding; }
-    .vspace {  padding:@padding 0px; }
+    .hspace {  
+        padding-right: @padding; 
+        padding-left:@padding; 
+    }
+    .vspace {  
+        padding-top:@padding 0px; 
+        padding-bottom:@padding 0px; 
+    }
 
     /* Small tricks */
     .halign { display:inline-block; margin-right:25px;}
@@ -131,7 +139,6 @@
         /* Use background images defaults */
         background-image:url('../images/logo.png');
         background-repeat:no-repeat;
-        background-size:contain;
         background-position:center center;
 
         /* Set a default height */
@@ -146,6 +153,8 @@
         }
         &.small {
             height:46px;
+            width:80px;
+            background-size:100%;
         }
         &.vsmall {
             height:60px;
@@ -216,6 +225,14 @@
             background-color:@primary;
             color:@dark;
         }
+        &:hover {
+            color:@primary;
+            background-color:lighten(@dark,25%);
+        }
+    }
+
+    .btn-advanced-search {
+        margin:5px;
     }
 
     /* Big round buttons here */
@@ -232,7 +249,8 @@
             
         }
         &.googleplay {
-            background-image:url('../images/googleplay.png');
+            background-image:url('../images/androidapp_play.png');
+            background-repeat:no-repeat;
             background-size:100%;
             height:67px;
             width:194px;
@@ -245,7 +263,7 @@
 
     050 LISTS
         0510 Inline
-
+        0520 Breadcrumbs
 
 ----------------------------------------*/
 
@@ -271,6 +289,17 @@
         }
         &.list-inline.inline {
             display:inline-block;
+        }
+        &.breadcrumb {
+            background-color:transparent;
+            a {
+                color:@text-color;
+            }
+            &> li + li:before {
+                color: @text-color;
+            }
+
+
         }
     }
 
@@ -409,7 +438,27 @@
 
 ----------------------------------------*/
 
-    .pagination {
+    ul.pager {
+            li:first-child, li:last-child {
+                a {
+                    background-color:white;
+                    &:hover {
+                        background-color:@gray-lighter;
+                    }   
+                }
+            }
+            li.active {
+                a {
+                    .primary;
+                }
+            }
+    }
+
+    .pager li > a, .pager li > span {
+        padding: 7px 14px;
+        color:@text-color;
+        font-weight:700;
+        background-color:@gray-lighter;
     }
 
 
@@ -806,6 +855,7 @@
             border:4px solid @primary;
             height:250px;
             width:100%; 
+           margin:10px 0px;
         }
 
         .description {
@@ -848,22 +898,48 @@
     .index-list {
         ul {
             list-style:none;
+            li a {
+                color:@text-color;
+            }
         }
     } 
 
 
+/* ---------------------------------------
+
+   0180  Key
+
+
+----------------------------------------*/
+
+    .key {
+        .gmap {
+            height:300px;
+        }
+    }
 
 
 /* ---------------------------------------
 
-    XX XXX
+   0190 Widgets
 
 
 ----------------------------------------*/
 
     .social-widget {
-        min-height:200px;
         .primary;
+        margin:20px 0px;
+
+        span {
+            float:left;
+            padding:20px;
+        }
+
+        .widgetarea {
+            margin-left:50px;
+            background-color:@gray-lighter;
+            min-height:200px;
+        }
     }
 
 

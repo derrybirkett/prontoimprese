@@ -4113,7 +4113,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 1.428571429;
   text-decoration: none;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #eeeeee;
   margin-left: -1px;
 }
 .pagination > li:first-child > a,
@@ -4131,7 +4131,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  background-color: #eeeeee;
+  background-color: #999999;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -4153,7 +4153,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > .disabled > a:focus {
   color: #999999;
   background-color: #ffffff;
-  border-color: #dddddd;
+  border-color: #eeeeee;
   cursor: not-allowed;
 }
 .pagination-lg > li > a,
@@ -4216,13 +4216,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   display: inline-block;
   padding: 5px 14px;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 25px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #999999;
 }
 .pager .next > a,
 .pager .next > span {
@@ -6137,6 +6137,7 @@ li {
         0420 Google Play Store
     050 Lists
         0510 Inline
+        0520 Breadcrumbs
     060 Banners
         0610 Island
         0620 Vetrina
@@ -6162,6 +6163,7 @@ li {
     0180 INDEXES
         01810 Cities
         01820 
+    0190 WIDGETS
         
 
 */
@@ -6178,10 +6180,12 @@ li {
 }
 /* Add a nice padding to mobile views (rows) */
 .hspace {
-  padding: 0px 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .vspace {
-  padding: 30px 0px;
+  padding-top: 30px 0px;
+  padding-bottom: 30px 0px;
 }
 /* Small tricks */
 .halign {
@@ -6245,7 +6249,6 @@ li {
   /* Use background images defaults */
   background-image: url('../images/logo.png');
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center center;
   /* Set a default height */
   height: 120px;
@@ -6258,6 +6261,8 @@ li {
 }
 .logo.small {
   height: 46px;
+  width: 80px;
+  background-size: 100%;
 }
 .logo.vsmall {
   height: 60px;
@@ -6316,6 +6321,13 @@ li {
   background-color: #fecf0f;
   color: #333333;
 }
+.btn-pronto:hover {
+  color: #fecf0f;
+  background-color: #737373;
+}
+.btn-advanced-search {
+  margin: 5px;
+}
 /* Big round buttons here */
 .btn-round {
   margin-right: 20px;
@@ -6324,7 +6336,8 @@ li {
   width: 50px;
 }
 .button.googleplay {
-  background-image: url('../images/googleplay.png');
+  background-image: url('../images/androidapp_play.png');
+  background-repeat: no-repeat;
   background-size: 100%;
   height: 67px;
   width: 194px;
@@ -6336,7 +6349,7 @@ li {
 
     050 LISTS
         0510 Inline
-
+        0520 Breadcrumbs
 
 ----------------------------------------*/
 ul {
@@ -6359,6 +6372,15 @@ ul.list-inline.dividers li:last-child {
 }
 ul.list-inline.inline {
   display: inline-block;
+}
+ul.breadcrumb {
+  background-color: transparent;
+}
+ul.breadcrumb a {
+  color: #333333;
+}
+ul.breadcrumb > li + li:before {
+  color: #333333;
 }
 /* ---------------------------------------
 
@@ -6468,6 +6490,31 @@ ul.list-inline.inline {
 
 
 ----------------------------------------*/
+ul.pager li:first-child a,
+ul.pager li:last-child a {
+  background-color: white;
+}
+ul.pager li:first-child a:hover,
+ul.pager li:last-child a:hover {
+  background-color: #eeeeee;
+}
+ul.pager li.active a {
+  background: #fecf0f;
+}
+ul.pager li.active a a {
+  color: #333333;
+}
+ul.pager li.active a.inverse {
+  background-color: #333333;
+  color: #fecf0f;
+}
+.pager li > a,
+.pager li > span {
+  padding: 7px 14px;
+  color: #333333;
+  font-weight: 700;
+  background-color: #eeeeee;
+}
 /* ---------------------------------------
 
     0110 Navbar
@@ -6615,7 +6662,8 @@ ul.list-inline.inline {
         01420 Review
 ----------------------------------------*/
 .reviews {
-  padding: 0px 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .reviews ul.nav-pills li a {
   text-transform: uppercase;
@@ -6627,6 +6675,10 @@ ul.list-inline.inline {
 .reviews ul.nav-pills li a.inverse {
   background-color: #fecf0f;
   color: #333333;
+}
+.reviews ul.nav-pills li a:hover {
+  color: #fecf0f;
+  background-color: #737373;
 }
 .reviews ul.nav-pills li a:hover {
   background-color: #fecf0f;
@@ -6719,6 +6771,10 @@ ul.list-inline.inline {
   color: #333333;
 }
 .schedina ul.nav-pills li a:hover {
+  color: #fecf0f;
+  background-color: #737373;
+}
+.schedina ul.nav-pills li a:hover {
   background-color: #fecf0f;
   color: #333333;
 }
@@ -6776,6 +6832,10 @@ ul.list-inline.inline {
   color: #333333;
 }
 .options ul.nav-pills li a:hover {
+  color: #fecf0f;
+  background-color: #737373;
+}
+.options ul.nav-pills li a:hover {
   background-color: #fecf0f;
   color: #333333;
 }
@@ -6805,6 +6865,7 @@ ul.list-inline.inline {
   border: 4px solid #fecf0f;
   height: 250px;
   width: 100%;
+  margin: 10px 0px;
 }
 .minisito .description {
   padding: 30px 30px;
@@ -6845,15 +6906,27 @@ ul.index li a {
 .index-list ul {
   list-style: none;
 }
+.index-list ul li a {
+  color: #333333;
+}
 /* ---------------------------------------
 
-    XX XXX
+   0180  Key
+
+
+----------------------------------------*/
+.key .gmap {
+  height: 300px;
+}
+/* ---------------------------------------
+
+   0190 Widgets
 
 
 ----------------------------------------*/
 .social-widget {
-  min-height: 200px;
   background: #fecf0f;
+  margin: 20px 0px;
 }
 .social-widget a {
   color: #333333;
@@ -6862,18 +6935,35 @@ ul.index li a {
   background-color: #333333;
   color: #fecf0f;
 }
-/* Mobile and small */
-/* 
+.social-widget span {
+  float: left;
+  padding: 20px;
+}
+.social-widget .widgetarea {
+  margin-left: 50px;
+  background-color: #eeeeee;
+  min-height: 200px;
+}
+/* Mobile and small only */
+@media (max-width: 991px) {
+  /* 
 
 SM
 --
 Styles up to small devices
 
 */
-/* Remove padding */
-.navbar-nav {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* Remove padding */
+  .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* Horizontal Center Banners ads on Mobile */
+  .banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -6969,10 +7059,14 @@ Styles up to small devices
 
 
 ----------------------------------------*/
+  .minisito .schedina {
+    padding: 30px;
+  }
   .minisito .mappa {
     height: 340px;
   }
-  .minisito .sharing {
+  .minisito .sharing,
+  .minisito links {
     display: inline-block;
     margin-right: 25px;
   }

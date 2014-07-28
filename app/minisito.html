@@ -49,6 +49,8 @@
                             <li><a href="list.html">List</a></li>
                             <li><a href="scheda.html">Scheda</a></li>
                             <li><a href="minisito.html">Minisito</a></li>
+                            <li><a href="lista_semplice.html">Lista Semplice</a></li>
+                            <li><a href="lista_categorie.html">Lista Categorie</a></li>
                         </ul>
                   </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -98,7 +100,7 @@
 
         <section class="body">
 
-                    <section class="schedina row padded"> 
+                    <section class="schedina row hspace"> 
                         <header class="col-md-6">
                             <h6>Ristorante Marina di Niside</h6>
                             <img src="images/MINISITO_mobile.png" />
@@ -134,23 +136,27 @@
                         </div>
                     </section>
 
+                    <div class="container-fluid">
                     <aside class="options row">
-                        <div class="container">
-                            <ul class="nav nav-pills sharing">
-                                <li><a href="#">Aggiungi ai preferiti</a></li>
-                                <li><a href="#" class="">Stampa</a></li>
-                                <li><a href="#" class="">Sito web</a></li>
-                            </ul>
-                            <ul class="nav nav-pills sharing pull-right">
-                                <li class="disabled">Condividi via:</li>
-                                <li><a href="#">Mail</a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="col-md-6">
+                                <ul class="nav nav-pills links">
+                                    <li><a href="#">Aggiungi ai preferiti</a></li>
+                                    <li><a href="#" class="">Stampa</a></li>
+                                    <li><a href="#" class="">Sito web</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="nav nav-pills sharing">
+                                    <li class="disabled">Condividi via:</li>
+                                    <li><a href="#">Mail</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
                     </aside>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -271,14 +277,14 @@
 
                                 <!-- Pagination -->
                                 <div class="centered">
-                                    <ul class="pagination">
-                                        <li><a href="#">&laquo;</a></li>
-                                        <li><a href="#">1</a></li>
+                                    <ul class="pager">
+                                        <li><a href="#"><span class="fa fa-chevron-left"></span></a></li>
+                                        <li class="active"><a href="#">1</a></li>
                                         <li><a href="#">2</a></li>
                                         <li><a href="#">3</a></li>
                                         <li><a href="#">4</a></li>
                                         <li><a href="#">5</a></li>
-                                        <li><a href="#">&raquo;</a></li>
+                                        <li><a href="#"><span class="fa fa-chevron-right"></span></a></li>
                                     </ul>
                                 </div>
                             </section>
@@ -286,18 +292,18 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="container">
+                    <div class="container">
+                        <div class="row">
                             <div class="col-md-6">
                                 <aside class="social-widget">
                                    <span class="fa fa-facebook"></span>
-                                    <div class="widgetarea">Facebook</a>
+                                    <div class="widgetarea"></div>
                                 </aside>
                             </div>
                             <div class="col-md-6">
                                 <aside class="social-widget">
                                    <span class="fa fa-twitter"></span>
-                                    <div class="widgetarea">Twitter</a>
+                                    <div class="widgetarea"></div>
                                 </aside>
                             </div>
                         </div>
@@ -349,7 +355,7 @@
     <!-- Block Province -->
     <div class="prefooter province grey">
         <div class="container">
-            <ul class="list-inline dividers">
+            <ul class="breadcrumb">
                 <li><strong>PROVINCE:</strong></li>
                 <li><a href="">Bergamo</ar</li>
                 <li><a href="">Brescia</a></li>
@@ -370,7 +376,7 @@
     <!-- Regioni -->
     <div class="prefooter regions primary">
         <div class="container">
-            <ul class="list-inline dividers">
+            <ul class="breadcrumb">
                 <li><strong>REGIONS:</strong></li>
                 <li><a href="">Abruzzo</ar</li>
                 <li><a href="">Basilicata</a></li>
