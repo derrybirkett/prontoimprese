@@ -5,7 +5,10 @@
     "bootstrap": "~3.0.3",
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.1.0",
+    "respond": "~1.4.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "respond": "~1.4.2"
+  }
 }

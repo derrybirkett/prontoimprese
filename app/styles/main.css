@@ -6340,7 +6340,6 @@ li {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 67px;
-  width: 194px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -6354,24 +6353,6 @@ li {
 ----------------------------------------*/
 ul {
   padding: 0px;
-}
-ul.list-inline.dividers li {
-  border-right: 1px solid grey;
-  padding-right: 0.5em;
-}
-ul.list-inline.dividers li a {
-  color: #333333;
-}
-ul.list-inline.dividers li:first-child {
-  margin-right: 0em;
-}
-ul.list-inline.dividers li:last-child {
-  border-right: none;
-  padding-right: 0em;
-  margin-right: 0em;
-}
-ul.list-inline.inline {
-  display: inline-block;
 }
 ul.breadcrumb {
   background-color: transparent;
@@ -6447,6 +6428,9 @@ ul.breadcrumb > li + li:before {
 .scaricare .caps {
   text-transform: uppercase;
   padding: 10px 0px;
+}
+.scaricare .googleplay {
+  width: 194px;
 }
 .prefooter {
   padding: 10px 30px;
@@ -6609,12 +6593,15 @@ ul.pager li.active a.inverse {
 
 ----------------------------------------*/
 .user-ratings.large {
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
 }
 .user-ratings.large .stars {
-  font-size: 30px;
+  font-size: 26px;
   margin-right: 0.5em;
+}
+.user-ratings ul {
+  display: inline-block;
 }
 .user-rating {
   display: inline-block;
@@ -6813,6 +6800,7 @@ ul.pager li.active a.inverse {
   color: #999999;
   padding: 5px;
   border-top: 4px solid #fecf0f;
+  margin-bottom: 10px;
 }
 .options a {
   color: #999999;
