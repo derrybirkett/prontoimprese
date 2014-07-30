@@ -96,12 +96,16 @@
     .qnlogo {
         height:inherit;
         width:50px;
-        background-image:url(../images/qn.svg);
+        background-image:url(../images/qn_logo.png);
         background-size:100%;
         background-repeat: no-repeat;
         background-position: center center;
-        margin-left: 10px;;     
-        margin-right: 20px;;     
+        margin-left: 10px;     
+        margin-right: 20px;     
+
+        /* ie8 Fix */
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/qn_logo.png', sizingMethod='scale');                                                            
+        -ms-filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo.png', sizingMethod='scale')";
     }
 
     /* Style navbar */
@@ -140,6 +144,9 @@
         background-image:url('../images/logo.png');
         background-repeat:no-repeat;
         background-position:center center;
+        /* ie8 Fix */
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo.png', sizingMethod='scale');                                                            
+        -ms-filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo.png', sizingMethod='scale')";
 
         /* Set a default height */
         height:120px;
@@ -150,6 +157,9 @@
         /* Variations */
         &.dark {
             background-image:url('../images/logo_solo_nero.png');
+            /* ie8 Fix */
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo_solo_nero.png', sizingMethod='scale');                                                            
+            -ms-filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo_solo_nero.png', sizingMethod='scale')";
         }
         &.small {
             height:46px;
@@ -163,6 +173,9 @@
         }
         &.solo {
             background-image:url('../images/bee.png');
+            /* ie8 Fix */
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/bee.png', sizingMethod='scale');                                                            
+            -ms-filter: ~"progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/bee.png', sizingMethod='scale')";
             width:80px;
             height:56px;
         }
