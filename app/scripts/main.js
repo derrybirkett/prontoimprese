@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+/* Custom JS */

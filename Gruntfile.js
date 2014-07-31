@@ -277,9 +277,17 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap/dist/fonts/*.*'
+                       // 'bower_components/bootstrap/dist/fonts/*.*',
+                       // 'bower_components/font-awesome/fonts/*.*'
                     ]
-                }]
+                   }, {
+                        /* COPY Font awesome fonts */
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= config.app %>/bower_components/font-awesome',
+                        dest: '<%= config.dist %>',
+                        src: ['fonts/*.*']
+                    }]
             },
             styles: {
                 expand: true,
@@ -364,9 +372,9 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
-        'rev',
+//        'rev',
         'usemin',
-        'htmlmin'
+  //      'htmlmin'
     ]);
 
     grunt.registerTask('default', [
