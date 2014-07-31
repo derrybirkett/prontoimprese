@@ -6210,18 +6210,14 @@ li {
 ----------------------------------------*/
 /* QN Logo */
 .qnlogo {
-  height: inherit;
   width: 50px;
-  max-width: 100%;
-  background-image: url(../images/qn_logo.png);
+  height: 50px;
+  background-image: url('../images/qn_logo.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-left: 10px;
-  margin-right: 20px;
-  /* ie8 Fix */
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://127.0.0.1:9000/images/qn_logo.png', sizingMethod='scale');
-  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo.png', sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/qn_logo.png', sizingMethod='scale');
 }
 /* Style navbar */
 .navbar-default .navbar-toggle,
@@ -6235,9 +6231,8 @@ li {
   font-weight: 600;
 }
 /* Testata */
-.testata {
-  padding: 10px;
-  background-color: #333333;
+.testata .logo {
+  margin: 0 auto;
 }
 /* ---------------------------------------
 
@@ -6259,8 +6254,6 @@ li {
   -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='http://127.0.0.1:9000/images/logo.png', sizingMethod='scale');
   /* Set a default height */
   height: 120px;
-  /* Make some spacing inside the logo box so it doesnt touch the sides */
-  padding: 10px;
   /* Variations */
 }
 .logo.dark {
@@ -6294,6 +6287,7 @@ li {
 
 ----------------------------------------*/
 .search {
+  background-color: #333333;
   /* Remove bootstrap shadow */
 }
 .search .search-box {
@@ -6945,6 +6939,19 @@ ul.index li a {
   background-color: #eeeeee;
   min-height: 200px;
 }
+/* ---------------------------------------
+
+   Home tweaks 
+
+
+----------------------------------------*/
+.home .testata {
+  width: 300px;
+  margin: 0 auto;
+}
+.home .search {
+  background-color: white;
+}
 /* Mobile and small only */
 @media (max-width: 991px) {
   /* 
@@ -6987,12 +6994,11 @@ Styles up to small devices
         010 Search
 
 ----------------------------------------*/
-  .search {
-    min-height: 50px;
-  }
-  /* remove vertical spacing on search */
-  .search .search-box .input-group {
-    margin-bottom: 0px;
+  /* Logo tweaks */
+  .search .logo {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 95%;
   }
   .filled .btn {
     background-color: #555;
@@ -7073,3 +7079,15 @@ Styles up to small devices
   }
 }
 /* Large devices (large desktops, 1200px and up) */
+/* IE8 */
+/*
+
+IE8 Hacks
+
+*/
+.lt-ie9 {
+  /* Reduce size a little  */
+}
+.lt-ie9 .testata .logo.dark.small {
+  width: 100%;
+}
