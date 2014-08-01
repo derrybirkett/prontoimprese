@@ -6455,7 +6455,8 @@ ul.breadcrumb > li + li:before {
 .footer {
   background: #333333;
   color: #999999;
-  padding: 50px 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 90%;
   color: #eeeeee;
   /* Add some spacing around Google Play */
