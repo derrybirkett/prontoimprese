@@ -6199,6 +6199,11 @@ li {
 .last {
   margin-right: 0px;
 }
+/* Bootstrap Container Extensions issue fix */
+.container-fluid .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 /* ---------------------------------------
 
     010 Header
@@ -6208,6 +6213,9 @@ li {
 
 
 ----------------------------------------*/
+.qnbar {
+  display: none;
+}
 /* QN Logo */
 .qnlogo {
   width: 50px;
