@@ -9,9 +9,12 @@ Changelog
 
     0.0.3
 
-    Update grid again to fix central at 990px 
+    Update grid again (list.html) to fix central at 970px 
 
 ----------------------------------------*/
+
+    * Remove all containers and replaced with a single container around all content
+    * Remove row from scheda-images
 
 /* ---------------------------------------
 

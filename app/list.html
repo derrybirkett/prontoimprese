@@ -57,8 +57,10 @@
             </nav>
         </header>
 
+        <!-- Container -->
+        <div class="container">
+
         <!-- SEARCH -->
-        <div class="container-fluid">
         <section class="search row">
             <!-- Testata -->
             <div class="testata col-md-1">
@@ -98,12 +100,10 @@
                 </ul> 
             </div>
         </section>
-        </div>
         <!-- end search -->
 
         <!-- BODY -->
-        <div class="container">
-            <nav class="categories hidden-sm hidden-xs">
+            <nav class="categories hidden-sm hidden-xs row">
                 <ul class="nav nav-pills nav-justified">
                     <li><a href="/"><span class="fa fa-cutlery"></span>Ristoranti</a></li>
                     <li><a href="/"><span class="fa fa-database"></span>Pasticcerie</a></li>
@@ -117,10 +117,10 @@
                 </ul> 
             </nav>
 
-            <section class="body">
+            <section class="body row">
 
                 <!-- Header -->
-                <header class="intro col-md-12">
+                <header class="intro">
                     <h1>Ristorante Pesce</h1>
                     <p><strong>500 risultati</strong> con indirizzo, telefono e mappa interattiva per <span class="keyword">ristoranti</span> a <span class="keyword">Milano</span> su ProntoImprese.it</p>
                 </header>
@@ -131,7 +131,7 @@
                     <div class="col-md-6">
                         <!-- Search Results -->
                         <section class="listings">
-                                <section class="sponsors hspace row">
+                                <section class="sponsors">
                                     <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
 
                                     <!-- Listing -->
@@ -371,7 +371,7 @@
 
                         <!-- Scheda -->
                         <article class="schedina hidden-xs hidden-sm">
-                            <aside class="scheda-images row">
+                            <aside class="scheda-images">
                                 <figure class="col-md-6 featured-image" style="background-image:url('http://lorempixel.com/400/200/food')">
                                     <div class="legend">FOTO</div>
                                 </figure>
@@ -416,11 +416,9 @@
                         <div class="banner vetrina"></div>
                     </div>
             </div><!-- /row -->
-        </section>
-    </div><!-- body -->
+        </section><!-- body -->
 
     <!-- Block Province -->
-    <div class="container">
         <div class="prefooter province grey row">
                 <ul class="breadcrumb">
                     <li><strong>PROVINCE:</strong></li>
@@ -438,10 +436,8 @@
                     <li><a href="">Campania</a></li>
                 </ul>
         </div>
-    </div>
 
     <!-- Regioni -->
-    <div class="container">
         <div class="prefooter regions primary row">
                 <ul class="breadcrumb">
                     <li><strong>REGIONS:</strong></li>
@@ -459,10 +455,8 @@
                     <li><a href="">Campania</a></li>
                 </ul>
         </div>
-    </div>
 
     <!-- FOOTER -->
-    <div class="container-fluid">
         <footer class="footer row">
             <div class="logos col-md-2">
                 <div class="logo dark small center-block"></div>
@@ -501,7 +495,11 @@
             </div>
 
         </footer>
+
     </div>
+
+
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
