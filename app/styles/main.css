@@ -6309,13 +6309,19 @@ li {
 }
 .search .search-box .input-group input {
   font-weight: 200;
-  padding-left: 0px;
+  border: 1px solid #eeeeee;
+}
+.search .search-box .btn {
+  border: 1px solid #eeeeee;
 }
 .search .form-control {
   box-shadow: none;
 }
 .search .filled {
   background-color: #fecf0f;
+}
+.search .ricerca-avanzata {
+  display: none;
 }
 /* ---------------------------------------
 
