@@ -28,7 +28,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
+        <header class="qnbar">
             <nav class="navbar navbar-default" role="navigation">
                   <div class="container-fluid">
                       <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,637 +58,741 @@
             </nav>
         </header>
 
+        <!-- Container -->
+        <div class="container">
 
-        <section class="search row">
-            <!-- Testata -->
-            <div class="testata col-md-1">
-                <div class="logo dark small"></div>
-            </div>
-
-            <!-- Search Box -->
-            <div class="filled col-md-11">
-                <div class="row">
-                    <form class="search-box">
-                        <div class="col-md-5">
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-addon"><span class="fa fa-search"></span></span>
-                                <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
-                            </div>
-                        </div>
-
-                        <div class="col-md-5">
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
-                                <input type="text" class="form-control" placeholder="Dove?">
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
-                        </div>
-                    </form>
+            <section class="search row">
+                <!-- Testata -->
+                <div class="testata col-md-1">
+                    <div class="logo dark small"></div>
                 </div>
-            </div>
-            
-            <!-- Utility Login -->
-            <div class="logins hidden-md hidden-lg">
-                <ul class="breadcrumb">
-                    <li><a href="#">Login Utente</a></li>
-                    <li><a href="#">Login Impresa</a></li>
-                    <li><a href="#">Fai Pubblicità con noi</a></li>
-                </ul> 
-            </div>
-        </section>
 
-        <nav class="categories hidden-sm hidden-xs"s style="padding-bottom:10px">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="/"><span class="fa fa-cutlery"></span>Mangiare e Bere</a></li>
-                <li><a href="/"><span class="fa fa-building"></span>Alberghi e Pensioni</a></li>
-                <li><a href="/"><span class="fa fa-beer"></span>Bar</a></li>
-                <li><a href="/"><span class="fa fa-ticket"></span>Cinema</a></li>
-                <li><a href="/"><span class="fa fa-shopping-cart"></span>Centri Commerciali e Supermercati</a></li>
-                <li><a href="/"><span class="fa fa-plus"></span>Farmacie</a></li>
-                <li><a href="/"><span class="fa fa-suitcase"></span>Avvocati</a></li>
-                <li><a href="/"><span class="fa fa-cloud"></span>Meteo</a></li>
-            </ul> 
-        </nav>
-
-        <section class="body row">
-            <!-- Left side -->
-            <div class="col-md-6">
-                    <!-- Scheda -->
-                    <article class="schedina">
-                        <figure class="featured-image mappa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.2303835232!2d9.17773225!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C+Italy!5e0!3m2!1sen!2s!4v1406198981661" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-                        </figure>
-                        <div class="padded">
-                            <h1>Ristorante Marina di Niside</h1>
-                            <h2>Ristorante - Milano</h2>
-                            <aside class="address">
-                                <p><strong>Indirizzo:</strong> Via Sauro, 2/E - Barazate (MI)</p>
-                                <p><strong>Telefono:</strong> 02 2879898</p>
-                                <p><strong>Fax:</strong> 02 8789878</p>
-                            </aside>
-                            <!-- Tabs -->
-                            <ul class="nav nav-pills">
-                                <li><a href="/">Modifica Dati</a></li>
-                                <li><a href="#">Indicazioni Stradali</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Options -->
-                        <aside class="options">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <ul class="nav nav-pills">
-                                        <li><a href="#">Aggiungi ai preferiti</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-8">
-                                    <ul class="nav nav-pills sharing">
-                                        <li class="disabled">Condividi via:</li>
-                                        <li><a href="#">Mail</a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    </ul>
+                <!-- Search Box -->
+                <div class="filled col-md-11">
+                    <div class="row">
+                        <form class="search-box">
+                            <div class="col-md-5">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                                    <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
                                 </div>
                             </div>
-                        </aside>
 
-                    </article>
-
-                    <!-- Reviews -->
-                    <section class="reviews">
-
-                        <!-- Scheda Rating -->
-                        <aside class="rating user-ratings large">
-                            <div class="user-rating">3.2</div>
-                                <ul class="stars list-inline inline">
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                </ul>
-                                <div class="user-rating review-count">
-                                    <a href="/">79 recensioni</a>
+                            <div class="col-md-5">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                                    <input type="text" class="form-control" placeholder="Dove?">
                                 </div>
-                                <a href="/" class="btn btn-pronto">Scrivi Recensione</a>
-                        </aside>
-
-                        <!-- Review -->
-                        <article class="review">
-                            <p class="date small">Gennaio 2014</p>
-                            <h1>Marino</h1>
-                            <aside class="ratings">
-                               <!-- Rating -->
-                               <dl class="">
-                                    <dt class="">Prezzo</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                               </dl> 
-                            </aside>
-                            <p class="comment">
-                            <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
-                            </p>
-                        </article>
-
-                        <!-- Review -->
-                        <article class="review">
-                            <p class="date small">Gennaio 2014</p>
-                            <h1>Marino</h1>
-                            <aside class="ratings">
-                               <!-- Rating -->
-                               <dl class="">
-                                    <dt class="">Prezzo</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                                    <dt class="">Qualità</dt>
-                                    <dd class="">
-                                        <ul class="stars list-inline">
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star active"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                                <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                    </dd>
-                               </dl> 
-                            </aside>
-                            <p class="comment">
-                            <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
-                            </p>
-                        </article>
-
-                    </section>
-
-
-                            <!-- Pagination -->
-                            <div class="centered">
-                                <ul class="pager">
-                                    <li><a href="#">&laquo;</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">&raquo;</a></li>
-                                </ul>
                             </div>
-
-            </div>
-
-            <!-- Right side -->
-            <div class="col-md-6">
-                <!-- Search Results -->
-                <section class="listings">
-                    <div class="listing-class sponsors">
-                        <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-
-                                <!-- Ad -->
-                                <div class="banner island"></div>
-
-                                <header><h2 class="sponsor-label principale">Altri sponsor Milano e provincia</h2></header>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Listing Title</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Listing Title</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Listing Title</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Listing Title</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
-                                    </aside>
-                                </article>
-
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                            </div>
+                        </form>
                     </div>
-                </section>
-            </div>
-        </section><!-- /body -->
-
-        <!-- Block Province -->
-        <div class="prefooter province grey row">
-                <ul class="breadcrumb">
-                    <li><strong>PROVINCE:</strong></li>
-                    <li><a href="">Bergamo</a></li>
-                    <li><a href="">Brescia</a></li>
-                    <li><a href="">Como</a></li>
-                    <li><a href="">Cremona</a></li>
-                    <li><a href="">Calabria</a></li>
-                    <li><a href="">Campania</a></li>
-                    <li><a href="">Bergamo</a></li>
-                    <li><a href="">Brescia</a></li>
-                    <li><a href="">Como</a></li>
-                    <li><a href="">Cremona</a></li>
-                    <li><a href="">Calabria</a></li>
-                    <li><a href="">Campania</a></li>
-                </ul>
-        </div>
-
-        <!-- Regioni -->
-        <div class="prefooter regions primary row">
-                <ul class="breadcrumb">
-                    <li><strong>REGIONS:</strong></li>
-                    <li><a href="">Abruzzo</a></li>
-                    <li><a href="">Basilicata</a></li>
-                    <li><a href="">Calabria</a></li>
-                    <li><a href="">Campania</a></li>
-                    <li><a href="">Abruzzo</a></li>
-                    <li><a href="">Abruzzo</a></li>
-                    <li><a href="">Basilicata</a></li>
-                    <li><a href="">Calabria</a></li>
-                    <li><a href="">Campania</a></li>
-                    <li><a href="">Basilicata</a></li>
-                    <li><a href="">Calabria</a></li>
-                    <li><a href="">Campania</a></li>
-                </ul>
-        </div>
-
-        <!-- -->
-        <footer class="footer row">
-            <div class="logos col-md-2">
-                <div class="logo dark small center-block"></div>
-                <div class="logo solo center-block"></div>
-            </div>
-            
-            <section class="quick-links col-md-3">
-                <ul class="list-unstyled">
-                    <li><a href="">Chi siamo</a></li>
-                    <li><a href="">Faq</a></li>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Condizioni</a></li>
-                    <li><a href="">La tua pubblicità su Pronto Imprese</a></li>
-                    <li><a href=""></a></li>
-                </ul>    
+                </div>
+                
+                <!-- Utility Login -->
+                <div class="logins hidden-md hidden-lg">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Login Utente</a></li>
+                        <li><a href="#">Login Impresa</a></li>
+                        <li><a href="#">Fai Pubblicità con noi</a></li>
+                    </ul> 
+                </div>
             </section>
 
-            <div class="scaricare centered col-md-2">
-                <!-- <p>Scarica la app</p> -->
-                <div class="button googleplay"></div>
-            </div>
+            <nav class="categories hidden-sm hidden-xs row" style="padding-bottom:10px">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="/"><span class="fa fa-cutlery"></span>Mangiare e Bere</a></li>
+                    <li><a href="/"><span class="fa fa-building"></span>Alberghi e Pensioni</a></li>
+                    <li><a href="/"><span class="fa fa-beer"></span>Bar</a></li>
+                    <li><a href="/"><span class="fa fa-ticket"></span>Cinema</a></li>
+                    <li><a href="/"><span class="fa fa-shopping-cart"></span>Centri Commerciali e Supermercati</a></li>
+                    <li><a href="/"><span class="fa fa-plus"></span>Farmacie</a></li>
+                    <li><a href="/"><span class="fa fa-suitcase"></span>Avvocati</a></li>
+                    <li><a href="/"><span class="fa fa-cloud"></span>Meteo</a></li>
+                </ul> 
+            </nav>
 
-            <div class="col-md-4 col-md-offset-1">
-                <div class="utility logins">
-                    <ul class="nav nav-pills">
-                        <li><a href="">Login Utente</a></li>
-                        <li><a href="">Login Imprese</a></li>
-                    </ul>
+            <section class="body row">
+
+                <div class="row">
+                <!-- Left side -->
+                <div class="col-md-6">
+                        <!-- Scheda -->
+                        <article class="schedina">
+                            <figure class="featured-image mappa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.2303835232!2d9.17773225!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C+Italy!5e0!3m2!1sen!2s!4v1406198981661" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                            </figure>
+                                <h1>Ristorante Marina di Niside</h1>
+                                <h2>Ristorante - Milano</h2>
+                                <aside class="address">
+                                    <p><strong>Indirizzo:</strong> Via Sauro, 2/E - Barazate (MI)</p>
+                                    <p><strong>Telefono:</strong> 02 2879898</p>
+                                    <p><strong>Fax:</strong> 02 8789878</p>
+                                </aside>
+                                <!-- Tabs -->
+                                <ul class="nav nav-pills" style="margin-bottom:20px">
+                                    <li><a href="/">Modifica Dati</a></li>
+                                    <li><a href="#">Indicazioni Stradali</a></li>
+                                </ul>
+
+                            <!-- Options -->
+                            <aside class="options">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="#">Aggiungi ai preferiti</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <ul class="nav nav-pills sharing">
+                                            <li class="disabled">Condividi via:</li>
+                                            <li><a href="#">Mail</a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+
+                        </article>
+
+                        <!-- Reviews -->
+                        <section class="reviews">
+
+                            <!-- Scheda Rating -->
+                            <aside class="rating user-ratings large">
+                                <div class="user-rating">3.2</div>
+                                    <ul class="stars list-inline inline">
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                                    <div class="user-rating review-count">
+                                        <a href="/">79 recensioni</a>
+                                    </div>
+                                    <a href="/" class="btn btn-pronto usher" data-target="#makeNewReview">Scrivi Recensione</a>
+                            </aside>
+
+                            <!-- New Review -->
+                            <section class="new-review" id="makeNewReview">
+                                <form action="" method="POST" id="frmReview" class="form-inline">
+                                    <h1>Scrivi la tua opinione</h1>
+                                    <p>Dai il tuo giudizio</p>
+
+                                    <div class="pB20">
+                                        <div class="">
+                                            <span class="prontoRTxt">Prezzo</span>
+                                            <span class="prontRating" id="divRatePrezzo"></span>
+                                        </div>
+                                        <div class="">
+                                            <span class="prontoRTxt">Qualità</span>
+                                            <span class="prontRating" id="divRateQualita"></span>
+                                        </div>
+
+                                        <div class="">
+                                            <span class="prontoRTxt">Servizio</span>
+                                            <span class="prontRating" id="divRateService"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="pB20">
+                                        <p>Lo consiglieresti ad un amico?
+                                        <input type="radio" value="1" name="review" class="inpnobrd">
+                                        <span class="fa fa-thumbs-up"></span>
+                                        <input type="radio" value="0" name="review" class="inpnobrd">
+                                        <span class="fa fa-thumbs-down"></span></p>
+                                    </div>
+
+                                    <div class="pB20">
+                                        <p>
+                                            In che periodo hai utilizzato il servizio?
+
+                                            <select id="revPeriod" name="revPeriod">
+                                                <option value=""></option>
+                                                    <option value="2014-08">agosto 2014</option>
+                                                    <option value="2014-07">luglio 2014</option>
+                                                    <option value="2014-06">giugno 2014</option>
+                                                    <option value="2014-05">maggio 2014</option>
+                                                    <option value="2014-04">aprile 2014</option>
+                                                    <option value="2014-03">marzo 2014</option>
+                                                    <option value="2014-02">febbraio 2014</option>
+                                                    <option value="2014-01">gennaio 2014</option>
+                                                    <option value="2013-12">dicembre 2013</option>
+                                                    <option value="2013-11">novembre 2013</option>
+                                                    <option value="2013-10">ottobre 2013</option>
+                                                    <option value="2013-09">settembre 2013</option>
+                                                    <option value="2013-08">agosto 2013</option>
+                                                    <option value="2013-07">luglio 2013</option>
+                                                    <option value="2013-06">giugno 2013</option>
+                                                    <option value="2013-05">maggio 2013</option>
+                                                    <option value="2013-04">aprile 2013</option>
+                                                    <option value="2013-03">marzo 2013</option>
+                                                    <option value="2013-02">febbraio 2013</option>
+                                                    <option value="2013-01">gennaio 2013</option>
+                                                    <option value="2012-12">dicembre 2012</option>
+                                                    <option value="2012-11">novembre 2012</option>
+                                                    <option value="2012-10">ottobre 2012</option>
+                                                    <option value="2012-09">settembre 2012</option>
+                                            </select>
+                                        </p>
+                                    </div>
+
+                                    <div class="pB20">
+                                        <p>La tua opinione</p>
+                                        <textarea name="recensione" id="recensione" class="inprec form-control"></textarea>
+
+                                    </div>
+
+                                    <div class="pB20">
+                                        <h3>Sei un utente già registrato?</h3>
+                                        <div class="form-group">
+                                            <input type="text" value="" name="nu1" id="nu1" autocomplete="off" class="form-control">
+                                            <input type="password" value="" name="pw1" id="pw1" autocomplete="off" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="pB20">
+                                        <h3>Sei un nuovo utente?</h3>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="20" value="" id="nv1" name="nv1" class="form-control">
+                                            <input type="text" value="" maxlength="50" id="em1" name="em1" class="form-control">
+                                        </div>
+                                    </div>
+
+                                      <div class="checkbox pB20">
+                                        <label>
+                                        <input type="checkbox" id="privok" name="privok" value="1" class="inpnobrd">
+                                        Accetto <a class="JqPCondizioni" href="/condizioni-generali-popup/">le condizioni di utilizzo</a> e <a class="JqPPrivacy" href="/privacy-popup/">la informativa privacy</a>
+                                        </label>
+                                      </div>  
+
+
+                                    <div class="pB20">
+                                        <input type="submit" value="Invia" class="btn btn-pronto">
+                                    </div>
+                                </form>
+                            </section>
+
+                            <!-- Review -->
+                            <article class="review">
+                                <p class="date small">Gennaio 2014</p>
+                                <h1>Marino</h1>
+                                <aside class="ratings">
+                                   <!-- Rating -->
+                                   <dl class="">
+                                        <dt class="">Prezzo</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                   </dl> 
+                                </aside>
+                                <p class="comment">
+                                <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                </p>
+                            </article>
+
+                            <!-- Review -->
+                            <article class="review">
+                                <p class="date small">Gennaio 2014</p>
+                                <h1>Marino</h1>
+                                <aside class="ratings">
+                                   <!-- Rating -->
+                                   <dl class="">
+                                        <dt class="">Prezzo</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                        <dt class="">Qualità</dt>
+                                        <dd class="">
+                                            <ul class="stars list-inline">
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star active"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                        </dd>
+                                   </dl> 
+                                </aside>
+                                <p class="comment">
+                                <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                </p>
+                            </article>
+
+                        </section>
+
+
+                                <!-- Pagination -->
+                                <div class="centered">
+                                    <ul class="pager">
+                                        <li><a href="#">&laquo;</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&raquo;</a></li>
+                                    </ul>
+                                </div>
+
                 </div>
 
-                <p class="footnote">
-                    Pronto s.r.l.<br />
-                    PI 012543890 <br />
-                    Pronto s.r.l. non garantisce niente
-                </p>
+                <!-- Right side -->
+                <div class="col-md-6">
+                    <!-- Search Results -->
+                    <section class="listings">
+                        <div class="listing-class sponsors">
+                            <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+
+                                    <!-- Ad -->
+                                    <div class="banner island"></div>
+
+                                    <header><h2 class="sponsor-label principale">Altri sponsor Milano e provincia</h2></header>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Listing Title</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Listing Title</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Listing Title</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Listing Title</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+            </section><!-- /body -->
+
+            <!-- Block Province -->
+            <div class="prefooter province grey row">
+                    <ul class="breadcrumb">
+                        <li><strong>PROVINCE:</strong></li>
+                        <li><a href="">Bergamo</a></li>
+                        <li><a href="">Brescia</a></li>
+                        <li><a href="">Como</a></li>
+                        <li><a href="">Cremona</a></li>
+                        <li><a href="">Calabria</a></li>
+                        <li><a href="">Campania</a></li>
+                        <li><a href="">Bergamo</a></li>
+                        <li><a href="">Brescia</a></li>
+                        <li><a href="">Como</a></li>
+                        <li><a href="">Cremona</a></li>
+                        <li><a href="">Calabria</a></li>
+                        <li><a href="">Campania</a></li>
+                    </ul>
             </div>
 
-        </footer>
+            <!-- Regioni -->
+            <div class="prefooter regions primary row">
+                    <ul class="breadcrumb">
+                        <li><strong>REGIONS:</strong></li>
+                        <li><a href="">Abruzzo</a></li>
+                        <li><a href="">Basilicata</a></li>
+                        <li><a href="">Calabria</a></li>
+                        <li><a href="">Campania</a></li>
+                        <li><a href="">Abruzzo</a></li>
+                        <li><a href="">Abruzzo</a></li>
+                        <li><a href="">Basilicata</a></li>
+                        <li><a href="">Calabria</a></li>
+                        <li><a href="">Campania</a></li>
+                        <li><a href="">Basilicata</a></li>
+                        <li><a href="">Calabria</a></li>
+                        <li><a href="">Campania</a></li>
+                    </ul>
+            </div>
+
+            <!-- -->
+            <footer class="footer row">
+                <div class="logos col-md-2">
+                    <div class="logo dark small center-block"></div>
+                    <div class="logo solo center-block"></div>
+                </div>
+                
+                <section class="quick-links col-md-3">
+                    <ul class="list-unstyled">
+                        <li><a href="">Chi siamo</a></li>
+                        <li><a href="">Faq</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Condizioni</a></li>
+                        <li><a href="">La tua pubblicità su Pronto Imprese</a></li>
+                        <li><a href=""></a></li>
+                    </ul>    
+                </section>
+
+                <div class="scaricare centered col-md-2">
+                    <!-- <p>Scarica la app</p> -->
+                    <div class="button googleplay"></div>
+                </div>
+
+                <div class="col-md-4 col-md-offset-1">
+                    <div class="utility logins">
+                        <ul class="nav nav-pills">
+                            <li><a href="">Login Utente</a></li>
+                            <li><a href="">Login Imprese</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="footnote">
+                        Pronto s.r.l.<br />
+                        PI 012543890 <br />
+                        Pronto s.r.l. non garantisce niente
+                    </p>
+                </div>
+
+            </footer>
+        </div><!-- /container -->
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

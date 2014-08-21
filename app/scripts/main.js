@@ -14,6 +14,7 @@ $(document).ready(function() {
     $(".usher").on("click", function() {
         target = $(this).data("target");
         $(target).slideToggle();
+        return false;
     });
 
 });

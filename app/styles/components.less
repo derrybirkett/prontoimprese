@@ -212,11 +212,10 @@
                 }
                 input {
                     font-weight: 200;
-                    border:1px solid @gray-lighter;
+                    border:none;
                 }
             }
             .btn {
-                border:1px solid @gray-lighter;
             }
         }
 
@@ -663,10 +662,10 @@
     0140 Reviews
         01410 Reviews
         01420 Review
+        01430 New Review
 ----------------------------------------*/
 
     .reviews {
-        .hspace;
         ul.nav-pills {
          li {
                 a {
@@ -713,6 +712,35 @@
         }
 
         border-bottom:1px solid @gray-lighter;
+
+    }
+
+    .new-review {
+        display:none;
+
+        h3 {
+            font-size: 16px;
+            color: #f60;
+            font-weight: bold;
+        }
+
+        .form-inline .form-control {
+            width:40%;
+        }
+    
+        /* Thumbs */
+        .fa {
+            font-size:28px;
+            padding:10px 10px 0px 0px;
+        }
+
+        .fa-thumbs-up {
+            color:@primary;
+        }
+        
+        .pB20 {
+        padding-bottom:10px;
+    }
 
     }
 
@@ -874,7 +902,7 @@
             border:4px solid @primary;
             height:250px;
             width:100%; 
-           margin:10px 0px;
+            margin:10px 0px;
         }
 
         .description {
@@ -991,6 +1019,9 @@
         }
         .search {
             background-color:white;
+            input, .btn {
+                border:1px solid @gray-lighter;
+            }            
         }
     }
 

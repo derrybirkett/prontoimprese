@@ -1615,7 +1615,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #999999;
   vertical-align: middle;
 }
 .form-control {
@@ -1625,11 +1625,11 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #999999;
   vertical-align: middle;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #ffffff;
+  border: 1px solid #eeeeee;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3304,7 +3304,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #999999;
   text-align: center;
   background-color: #ffffff;
   border: 1px solid #ffffff;
@@ -6311,10 +6311,7 @@ li {
 }
 .search .search-box .input-group input {
   font-weight: 200;
-  border: 1px solid #eeeeee;
-}
-.search .search-box .btn {
-  border: 1px solid #eeeeee;
+  border: none;
 }
 .search .form-control {
   box-shadow: none;
@@ -6671,11 +6668,8 @@ ul.pager li.active a.inverse {
     0140 Reviews
         01410 Reviews
         01420 Review
+        01430 New Review
 ----------------------------------------*/
-.reviews {
-  padding-right: 30px;
-  padding-left: 30px;
-}
 .reviews ul.nav-pills li a {
   text-transform: uppercase;
   font-weight: 200;
@@ -6723,6 +6717,28 @@ ul.pager li.active a.inverse {
 .review .comment {
   clear: both;
   margin: 0.5em 0em;
+}
+.new-review {
+  display: none;
+  /* Thumbs */
+}
+.new-review h3 {
+  font-size: 16px;
+  color: #f60;
+  font-weight: bold;
+}
+.new-review .form-inline .form-control {
+  width: 40%;
+}
+.new-review .fa {
+  font-size: 28px;
+  padding: 10px 10px 0px 0px;
+}
+.new-review .fa-thumbs-up {
+  color: #fecf0f;
+}
+.new-review .pB20 {
+  padding-bottom: 10px;
 }
 /* ---------------------------------------
 
@@ -6980,6 +6996,10 @@ ul.index li a {
 }
 .home .search {
   background-color: white;
+}
+.home .search input,
+.home .search .btn {
+  border: 1px solid #eeeeee;
 }
 /* Mobile and small only */
 @media (max-width: 991px) {
