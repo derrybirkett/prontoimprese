@@ -6383,6 +6383,9 @@ ul.breadcrumb a {
 ul.breadcrumb > li + li:before {
   color: #333333;
 }
+ul.inline {
+  display: inline-block;
+}
 /* ---------------------------------------
 
     060 BANNERS
@@ -6621,7 +6624,7 @@ ul.pager li.active a.inverse {
   font-size: 26px;
   margin-right: 0.5em;
 }
-.user-ratings ul {
+.user-ratings ul.inline {
   display: inline-block;
 }
 .user-rating {
@@ -6891,7 +6894,7 @@ ul.pager li.active a.inverse {
 }
 .minisito .mappa {
   border: 4px solid #fecf0f;
-  height: 250px;
+  height: auto;
   width: 100%;
   margin: 10px 0px;
 }

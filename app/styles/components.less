@@ -308,8 +308,10 @@
             &> li + li:before {
                 color: @text-color;
             }
+        }
 
-
+        &.inline {
+            display:inline-block;
         }
     }
 
@@ -605,7 +607,7 @@
                 margin-right:0.5em;
             } 
         }
-        ul {
+        ul.inline {
             display:inline-block;
         }
     }
@@ -900,7 +902,7 @@
         /* */
         .mappa {
             border:4px solid @primary;
-            height:250px;
+            height:auto;
             width:100%; 
             margin:10px 0px;
         }
