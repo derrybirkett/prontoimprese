@@ -28,7 +28,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
+        <header class="qnbar">
             <nav class="navbar navbar-default" role="navigation">
                   <div class="container-fluid">
                       <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,377 +57,395 @@
             </nav>
         </header>
 
-        <section class="search row">
-            <!-- Testata -->
-            <div class="testata col-md-1">
-                <div class="logo dark small"></div>
-            </div>
+        <!-- Container -->
+        <div class="container">
 
-            <!-- Search Box -->
-            <div class="filled col-md-11">
-                <div class="row">
-                    <form class="search-box">
-                        <div class="col-md-5">
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-addon"><span class="fa fa-search"></span></span>
-                                <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
-                            </div>
-                        </div>
-
-                        <div class="col-md-5">
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
-                                <input type="text" class="form-control" placeholder="Dove?">
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
-                        </div>
-                    </form>
+            <section class="search row">
+                <!-- Testata -->
+                <div class="testata col-md-1">
+                    <div class="logo dark small"></div>
                 </div>
-            </div>
-            
-            <!-- Utility Login -->
-            <div class="logins hidden-md hidden-lg">
-                <ul class="breadcrumb">
-                    <li><a href="#">Login Utente</a></li>
-                    <li><a href="#">Login Impresa</a></li>
-                    <li><a href="#">Fai Pubblicità con noi</a></li>
-                </ul> 
-            </div>
-        </section>
 
-        <section class="body">
-
-                    <section class="schedina row hspace"> 
-                        <header class="col-md-6">
-                            <h6>Ristorante Marina di Niside</h6>
-                            <img src="images/MINISITO_mobile.png" />
-                            <h1>La Gola</h1>
-                            
-                            <!-- Buttons -->
-                            <p class="large">Via Sauro, 2/E - Barazate (MI)</p>
-                            <p class="large halign"><button class="btn btn-warning btn-round"><i class="fa fa-phone"></i></button>+39 02 2879898</p>
-                            <p class="large halign"><button class="btn btn-warning btn-round"><i class="fa fa-send"></i></button>CONTATTA</p>
-
-                        <!-- Scheda Rating -->
-                        <aside class="rating user-ratings large">
-                            <div class="user-rating">3.2</div>
-                                <ul class="stars list-inline inline">
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star active"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                    <li><span class="fa fa-star"></span></li>
-                                </ul>
-                                <div class="user-rating review-count">
-                                    <a href="/">79 recensioni</a>
-                                </div>
-                                <a href="/" class="btn btn-pronto">Scrivi Recensione</a>
-                        </aside>
-
-                        </header>
-
-                        <div class="col-md-6">
-                            <figure class="mappa">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.2303835232!2d9.17773225!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C+Italy!5e0!3m2!1sen!2s!4v1406198981661" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-                            </figure>
-                        </div>
-                    </section>
-
-                    <div class="container-fluid">
-                    <aside class="options row">
-                            <div class="col-md-6">
-                                <ul class="nav nav-pills links">
-                                    <li><a href="#">Aggiungi ai preferiti</a></li>
-                                    <li><a href="#" class="">Stampa</a></li>
-                                    <li><a href="#" class="">Sito web</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="nav nav-pills sharing">
-                                    <li class="disabled">Condividi via:</li>
-                                    <li><a href="#">Mail</a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                    </aside>
-                    </div>
-
+                <!-- Search Box -->
+                <div class="filled col-md-11">
                     <div class="row">
-                        <div class="col-md-6">
-                            <section class="description">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                                <aside class="gallery">
-                                        <figure class="featured-image" style="background-image:url('http://lorempixel.com/400/200/people')">
-                                            <a href="/">
-                                                <span class="fa fa-play"></span>
-                                            </a>
-                                        </figure>
-                                        <figure class="featured-image" style="background-image:url('http://lorempixel.com/400/200/food')">
-                                            <a href="/">
-                                                <span class="fa fa-camera"></span>
-                                            </a>
-                                        </figure>
-                                </aside>
-                                <h1>Da Sapere</h1>
-                                <p class="large">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                            </section>
-                        </div>
+                        <form class="search-box">
+                            <div class="col-md-5">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon"><span class="fa fa-search"></span></span>
+                                    <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
+                                </div>
+                            </div>
 
-                        <div class="col-md-6">
-                            <section class="reviews">
-                                <h2 class="h2">Opinione dei Clienti (43)</h2>
+                            <div class="col-md-5">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                                    <input type="text" class="form-control" placeholder="Dove?">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Utility Login -->
+                <div class="logins hidden-md hidden-lg">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Login Utente</a></li>
+                        <li><a href="#">Login Impresa</a></li>
+                        <li><a href="#">Fai Pubblicità con noi</a></li>
+                    </ul> 
+                </div>
+            </section>
 
-                                    <!-- Reviews -->
-                                    <section class="latest-reviews">
+            <section class="body row">
 
-                                    <!-- Review -->
-                                    <article class="review">
-                                        <p class="date small">Gennaio 2014</p>
-                                        <h1>Marino</h1>
-                                        <aside class="ratings">
-                                           <!-- Rating -->
-                                           <dl class="">
-                                                <dt class="">Prezzo</dt>
-                                                <dd class="">
-                                                    <ul class="stars list-inline">
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                        </ul>
-                                                </dd>
-                                                <dt class="">Qualità</dt>
-                                                <dd class="">
-                                                    <ul class="stars list-inline">
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                        </ul>
-                                                </dd>
-                                                <dt class="">Qualità</dt>
-                                                <dd class="">
-                                                    <ul class="stars list-inline">
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                        </ul>
-                                                </dd>
-                                           </dl> 
-                                        </aside>
-                                        <p class="comment">
-                                        <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
-                                        </p>
-                                    </article>
+                        <section class="schedina row"> 
+                            <header class="col-md-6">
+                                <h6>Ristorante Marina di Niside</h6>
+                                <img src="images/MINISITO_mobile.png" />
+                                <h1>La Gola</h1>
+                                
+                                <!-- Buttons -->
+                                <p class="large">Via Sauro, 2/E - Barazate (MI)</p>
+                                <p class="large halign"><button class="btn btn-warning btn-round"><i class="fa fa-phone"></i></button>+39 02 2879898</p>
+                                <p class="large halign"><button class="btn btn-warning btn-round"><i class="fa fa-send"></i></button>CONTATTA</p>
 
-                                    <!-- Review -->
-                                    <article class="review">
-                                        <p class="date small">Gennaio 2014</p>
-                                        <h1>Marino</h1>
-                                        <aside class="ratings">
-                                           <!-- Rating -->
-                                           <dl class="">
-                                                <dt class="">Prezzo</dt>
-                                                <dd class="">
-                                                    <ul class="stars list-inline">
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                        </ul>
-                                                </dd>
-                                                <dt class="">Qualità</dt>
-                                                <dd class="">
-                                                    <ul class="stars list-inline">
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                        </ul>
-                                                </dd>
-                                                <dt class="">Qualità</dt>
-                                                <dd class="">
-                                                    <ul class="stars list-inline">
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star active"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                            <li><span class="fa fa-star"></span></li>
-                                                        </ul>
-                                                </dd>
-                                           </dl> 
-                                        </aside>
-                                        <p class="comment">
-                                        <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
-                                        </p>
-                                    </article>
-                            </section>
+                            <!-- Scheda Rating -->
+                            <aside class="rating user-ratings large">
+                                <div class="user-rating">3.2</div>
+                                    <ul class="stars list-inline inline">
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star active"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                                    <div class="user-rating review-count">
+                                        <a href="/">79 recensioni</a>
+                                    </div>
+                                <!-- Tabs -->
+                                <ul class="nav nav-pills" style="margin-bottom:20px">
+                                    <li><a href="/">Scrivi Recensione</a></li>
+                                </ul>
+                            </aside>
 
-                                <!-- Pagination -->
-                                <div class="centered">
-                                    <ul class="pager">
-                                        <li><a href="#"><span class="fa fa-chevron-left"></span></a></li>
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#"><span class="fa fa-chevron-right"></span></a></li>
+                            </header>
+
+                            <div class="col-md-6">
+                                <figure class="mappa">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.2303835232!2d9.17773225!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C+Italy!5e0!3m2!1sen!2s!4v1406198981661" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                                </figure>
+                            </div>
+                        </section>
+
+                        <div class="container-fluid">
+                        <aside class="options row">
+                                <div class="col-md-6">
+                                    <ul class="nav nav-pills links">
+                                        <li><a href="#">Aggiungi ai preferiti</a></li>
+                                        <li><a href="#" class="">Stampa</a></li>
+                                        <li><a href="#" class="">Sito web</a></li>
                                     </ul>
                                 </div>
-                            </section>
-    
+                                <div class="col-md-6">
+                                    <ul class="nav nav-pills sharing">
+                                        <li class="disabled">Condividi via:</li>
+                                        <li><a href="#">Mail</a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                        </aside>
                         </div>
-                    </div>
 
-                    <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <aside class="social-widget">
-                                   <span class="fa fa-facebook"></span>
-                                    <div class="widgetarea"></div>
-                                </aside>
+                                <section class="description">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                                    <aside class="gallery">
+                                            <figure class="featured-image" style="background-image:url('http://lorempixel.com/400/200/people')">
+                                                <a href="/">
+                                                    <span class="fa fa-play"></span>
+                                                </a>
+                                            </figure>
+                                            <figure class="featured-image" style="background-image:url('http://lorempixel.com/400/200/food')">
+                                                <a href="/">
+                                                    <span class="fa fa-camera"></span>
+                                                </a>
+                                            </figure>
+                                    </aside>
+                                    <h1>Da Sapere</h1>
+                                    <p class="large">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                                </section>
                             </div>
+
                             <div class="col-md-6">
-                                <aside class="social-widget">
-                                   <span class="fa fa-twitter"></span>
-                                    <div class="widgetarea"></div>
-                                </aside>
+                                <section class="reviews">
+                                    <h2 class="h2">Opinione dei Clienti (43)</h2>
+
+                                        <!-- Reviews -->
+                                        <section class="latest-reviews">
+
+                                        <!-- Review -->
+                                        <article class="review">
+                                            <p class="date small">Gennaio 2014</p>
+                                            <h1>Marino</h1>
+                                            <aside class="ratings">
+                                               <!-- Rating -->
+                                               <dl class="">
+                                                    <dt class="">Prezzo</dt>
+                                                    <dd class="">
+                                                        <ul class="stars list-inline">
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                            </ul>
+                                                    </dd>
+                                                    <dt class="">Qualità</dt>
+                                                    <dd class="">
+                                                        <ul class="stars list-inline">
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                            </ul>
+                                                    </dd>
+                                                    <dt class="">Qualità</dt>
+                                                    <dd class="">
+                                                        <ul class="stars list-inline">
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                            </ul>
+                                                    </dd>
+                                               </dl> 
+                                            </aside>
+                                            <p class="comment">
+                                            <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                            </p>
+                                        </article>
+
+                                        <!-- Review -->
+                                        <article class="review">
+                                            <p class="date small">Gennaio 2014</p>
+                                            <h1>Marino</h1>
+                                            <aside class="ratings">
+                                               <!-- Rating -->
+                                               <dl class="">
+                                                    <dt class="">Prezzo</dt>
+                                                    <dd class="">
+                                                        <ul class="stars list-inline">
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                            </ul>
+                                                    </dd>
+                                                    <dt class="">Qualità</dt>
+                                                    <dd class="">
+                                                        <ul class="stars list-inline">
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                            </ul>
+                                                    </dd>
+                                                    <dt class="">Qualità</dt>
+                                                    <dd class="">
+                                                        <ul class="stars list-inline">
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star active"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                                <li><span class="fa fa-star"></span></li>
+                                                            </ul>
+                                                    </dd>
+                                               </dl> 
+                                            </aside>
+                                            <p class="comment">
+                                            <span class="highlight">Ha detto: </span>WOW, si mangua benissimo.  Vi consiglio di provare il carpaccio di tigre al a spada con zenzero ed altri spezie di cui non conosco i nomini padre spirito sancto.
+                                            </p>
+                                        </article>
+                                </section>
+
+                                    <!-- Pagination -->
+                                    <div class="centered">
+                                        <ul class="pager">
+                                            <li><a href="#"><span class="fa fa-chevron-left"></span></a></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#"><span class="fa fa-chevron-right"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+        
                             </div>
                         </div>
-                    </div>
 
-            <!-- Ad -->
-            <div class="banner island hidden-md hidden-lg"></div>
-
-            <!-- Search Results -->
-            <section class="listings hspace hidden-md hidden-lg">
-                <section class="listing-class sponsors">
-                    <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
-
-                                <!-- Listing -->
-                                <article class="listing sponsor row">
-                                    <div class="col-md-8">
-                                        <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
-                                        <ul class="meta list-inline dividers">
-                                            <li><a href="#">Mappa</a></li>
-                                            <li><a href="#">Sito Web</a></li>
-                                        </ul>
-                                        <aside class="user-ratings">
-                                            <div class="user-rating">3.2</div>
-                                            <ul class="stars list-inline inline">
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star active"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                                    <li><span class="fa fa-star"></span></li>
-                                            </ul>
-                                        </aside>
-                                    </div>
-                                    <aside class="contact-details hidden-sm hidden-xs">
-                                        <div class="col-md-1">
-                                                <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <p class="">Via Sauro, 2/E</p>
-                                                <p class="">Baranzate (MI)</p>
-                                                <p class="">02 354 0912</p>
-                                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <aside class="social-widget">
+                                       <span class="fa fa-facebook"></span>
+                                        <div class="widgetarea"></div>
                                     </aside>
-                                </article>
+                                </div>
+                                <div class="col-md-6">
+                                    <aside class="social-widget">
+                                       <span class="fa fa-twitter"></span>
+                                        <div class="widgetarea"></div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
 
+                <!-- Ad -->
+                <div class="banner island hidden-md hidden-lg"></div>
+
+                <!-- Search Results -->
+                <section class="listings hspace hidden-md hidden-lg">
+                    <section class="listing-class sponsors">
+                        <header><h2 class="sponsor-label principale">Sponsor Milano e provincia</h2></header>
+
+                                    <!-- Listing -->
+                                    <article class="listing sponsor row">
+                                        <div class="col-md-8">
+                                            <h1 class="h3"><a href="#">Nu-Cube Fusion Restaurant</a></h1> 
+                                            <ul class="meta list-inline dividers">
+                                                <li><a href="#">Mappa</a></li>
+                                                <li><a href="#">Sito Web</a></li>
+                                            </ul>
+                                            <aside class="user-ratings">
+                                                <div class="user-rating">3.2</div>
+                                                <ul class="stars list-inline inline">
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star active"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                        <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </aside>
+                                        </div>
+                                        <aside class="contact-details hidden-sm hidden-xs">
+                                            <div class="col-md-1">
+                                                    <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <p class="">Via Sauro, 2/E</p>
+                                                    <p class="">Baranzate (MI)</p>
+                                                    <p class="">02 354 0912</p>
+                                            </div>
+                                        </aside>
+                                    </article>
+
+                    </section>
                 </section>
-            </section>
-    </section>
-
-    <!-- Block Province -->
-    <div class="prefooter province grey row">
-            <ul class="breadcrumb">
-                <li><strong>PROVINCE:</strong></li>
-                <li><a href="">Bergamo</a></li>
-                <li><a href="">Brescia</a></li>
-                <li><a href="">Como</a></li>
-                <li><a href="">Cremona</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-                <li><a href="">Bergamo</a></li>
-                <li><a href="">Brescia</a></li>
-                <li><a href="">Como</a></li>
-                <li><a href="">Cremona</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-            </ul>
-    </div>
-
-    <!-- Regioni -->
-    <div class="prefooter regions primary row">
-            <ul class="breadcrumb">
-                <li><strong>REGIONS:</strong></li>
-                <li><a href="">Abruzzo</a></li>
-                <li><a href="">Basilicata</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-                <li><a href="">Abruzzo</a></li>
-                <li><a href="">Abruzzo</a></li>
-                <li><a href="">Basilicata</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-                <li><a href="">Basilicata</a></li>
-                <li><a href="">Calabria</a></li>
-                <li><a href="">Campania</a></li>
-            </ul>
-    </div>
-
-    <!-- -->
-    <footer class="footer row">
-        <div class="logos col-md-2">
-            <div class="logo dark small center-block"></div>
-            <div class="logo solo center-block"></div>
-        </div>
-        
-        <section class="quick-links col-md-3">
-            <ul class="list-unstyled">
-                <li><a href="">Chi siamo</a></li>
-                <li><a href="">Faq</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Condizioni</a></li>
-                <li><a href="">La tua pubblicità su Pronto Imprese</a></li>
-                <li><a href=""></a></li>
-            </ul>    
         </section>
 
-        <div class="scaricare centered col-md-2">
-            <!-- <p>Scarica la app</p> -->
-            <div class="button googleplay"></div>
+        <!-- Breacrumbs -->
+        <div class="prefooter row">
+            <ul class="breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><a href="">Hotels</a></li>
+                <li><a href="">Bologna</a></li>
+                <li><a href="">Hotel Baglioni</a></li>
+            </ul>
         </div>
 
-        <div class="col-md-4 col-md-offset-1">
-            <div class="utility logins">
-                <ul class="nav nav-pills">
-                    <li><a href="">Login Utente</a></li>
-                    <li><a href="">Login Imprese</a></li>
+
+        <!-- Block Province -->
+        <div class="prefooter province grey row">
+                <ul class="breadcrumb">
+                    <li><strong>PROVINCE:</strong></li>
+                    <li><a href="">Bergamo</a></li>
+                    <li><a href="">Brescia</a></li>
+                    <li><a href="">Como</a></li>
+                    <li><a href="">Cremona</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                    <li><a href="">Bergamo</a></li>
+                    <li><a href="">Brescia</a></li>
+                    <li><a href="">Como</a></li>
+                    <li><a href="">Cremona</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
                 </ul>
+        </div>
+
+        <!-- Regioni -->
+        <div class="prefooter regions primary row">
+                <ul class="breadcrumb">
+                    <li><strong>REGIONS:</strong></li>
+                    <li><a href="">Abruzzo</a></li>
+                    <li><a href="">Basilicata</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                    <li><a href="">Abruzzo</a></li>
+                    <li><a href="">Abruzzo</a></li>
+                    <li><a href="">Basilicata</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                    <li><a href="">Basilicata</a></li>
+                    <li><a href="">Calabria</a></li>
+                    <li><a href="">Campania</a></li>
+                </ul>
+        </div>
+
+        <!-- -->
+        <footer class="footer row">
+            <div class="logos col-md-2">
+                <div class="logo dark small center-block"></div>
+                <div class="logo solo center-block"></div>
+            </div>
+            
+            <section class="quick-links col-md-3">
+                <ul class="list-unstyled">
+                    <li><a href="">Chi siamo</a></li>
+                    <li><a href="">Faq</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Condizioni</a></li>
+                    <li><a href="">La tua pubblicità su Pronto Imprese</a></li>
+                    <li><a href=""></a></li>
+                </ul>    
+            </section>
+
+            <div class="scaricare centered col-md-2">
+                <!-- <p>Scarica la app</p> -->
+                <div class="button googleplay"></div>
             </div>
 
-            <p class="footnote">
-                Pronto s.r.l.<br />
-                PI 012543890 <br />
-                Pronto s.r.l. non garantisce niente
-            </p>
-        </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="utility logins">
+                    <ul class="nav nav-pills">
+                        <li><a href="">Login Utente</a></li>
+                        <li><a href="">Login Imprese</a></li>
+                    </ul>
+                </div>
 
-    </footer>
+                <p class="footnote">
+                    Pronto s.r.l.<br />
+                    PI 012543890 <br />
+                    Pronto s.r.l. non garantisce niente
+                </p>
+            </div>
+
+        </footer>
+    </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

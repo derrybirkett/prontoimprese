@@ -6895,9 +6895,6 @@ ul.pager li.active a.inverse {
   width: 100%;
   margin: 10px 0px;
 }
-.minisito .description {
-  padding: 30px 30px;
-}
 .minisito .description img {
   width: 100%;
   margin: 30px 0px;
@@ -7115,9 +7112,6 @@ Styles up to small devices
 
 
 ----------------------------------------*/
-  .minisito .schedina {
-    padding: 30px;
-  }
   .minisito .mappa {
     height: 340px;
   }
