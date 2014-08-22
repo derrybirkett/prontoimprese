@@ -1020,9 +1020,14 @@
         }
         .search {
             background-color:white;
-            input, .btn {
-                border:1px solid @gray-lighter;
-            }            
+            .search-box {
+                input, .btn, .form-control { 
+                    border:1px solid @gray-lighter;
+                }            
+                .input-group-addon {
+                    min-width:50px;
+                }
+            }
         }
     }
 

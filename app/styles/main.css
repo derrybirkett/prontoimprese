@@ -6997,9 +6997,13 @@ ul.index li a {
 .home .search {
   background-color: white;
 }
-.home .search input,
-.home .search .btn {
+.home .search .search-box input,
+.home .search .search-box .btn,
+.home .search .search-box .form-control {
   border: 1px solid #eeeeee;
+}
+.home .search .search-box .input-group-addon {
+  min-width: 50px;
 }
 /* Mobile and small only */
 @media (max-width: 991px) {
