@@ -7010,6 +7010,11 @@ SM
 Styles up to small devices
 
 */
+  /* Add padding to body section */
+  .body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   /* Remove padding */
   .navbar-nav {
     margin-top: 0px;
