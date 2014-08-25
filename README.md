@@ -11,9 +11,14 @@ Changelog
 
 ----------------------------------------*/
 
-    Update grid again (list.html) to fix central at 970px 
+    * Update grid again (list.html) to fix central at 970px 
         * Remove all containers and replaced with a single container around all content
-    Added Advanced Search
+    + Added Advanced Search
+    + Added login overlay
+    + Added Modifica.html for updating listing
+    + Added City list to home page footer
+    + Added breadrumbs
+    + Added write review form
 
 /* ---------------------------------------
 
