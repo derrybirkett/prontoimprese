@@ -11,7 +11,7 @@ Changelog
 
 ----------------------------------------*/
 
-    * Update grid again (list.html) to fix central at 970px 
+    * Update grid again (list.html) to fix central at 970px (bootstrap)
         * Remove all containers and replaced with a single container around all content
     + Added Advanced Search
     + Added login overlay
@@ -19,6 +19,7 @@ Changelog
     + Added City list to home page footer
     + Added breadrumbs
     + Added write review form
+    + Change md breakpoint to 940px
 
 /* ---------------------------------------
 
