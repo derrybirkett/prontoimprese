@@ -7,11 +7,20 @@ Changelog
 
 /* ---------------------------------------
 
+    0.0.4
+
+----------------------------------------*/
+
+    * Change small and desktop breakpoints to 700px (so that desktop version is visible from tablet)
+
+
+/* ---------------------------------------
+
     0.0.3
 
 ----------------------------------------*/
 
-    * Update grid again (list.html) to fix central at 970px (bootstrap)
+    * Update grid again (list.html) to fix central at 990px 
         * Remove all containers and replaced with a single container around all content
     + Added Advanced Search
     + Added login overlay
