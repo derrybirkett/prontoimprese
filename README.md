@@ -7,16 +7,17 @@ Changelog
 
 /* ---------------------------------------
 
-    0.0.4
+    0.4
 
 ----------------------------------------*/
 
-    * Change small and desktop breakpoints to 700px (so that desktop version is visible from tablet)
+    * Change small and desktop breakpoints to 700px (so that desktop version is visible from tablet) (14926ceee3564ba963743c90251384a4789aca84)
+    * Add tooltip to Aggungi ai preferiti, replace text with heart (796b2de)
 
 
 /* ---------------------------------------
 
-    0.0.3
+    0.3
 
 ----------------------------------------*/
 
@@ -32,7 +33,7 @@ Changelog
 
 /* ---------------------------------------
 
-    0.0.2
+    0.2
 
     Updated List.html for changed grid
 
@@ -47,7 +48,7 @@ Changelog
 
 /* ---------------------------------------
 
-    0.0.1
+    0.1
 
 
 ----------------------------------------*/
