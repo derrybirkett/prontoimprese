@@ -17,4 +17,15 @@ $(document).ready(function() {
         return false;
     });
 
+
+    /* 
+
+    Tooltips 
+
+    */
+
+    $('.tooltipped').tooltip({
+       delay: { show: 500, hide: 100 } 
+    });
+
 });
