@@ -68,26 +68,43 @@
 
                 <!-- Search Box -->
                 <div class="filled col-md-11">
+                    <form class="search-box">
                     <div class="row">
-                        <form class="search-box">
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon"><span class="fa fa-search"></span></span>
                                     <input type="text" class="form-control" placeholder="Chi Sta Cercando?">
                                 </div>
                             </div>
 
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
                                     <input type="text" class="form-control" placeholder="Dove?">
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <button type="button" class="btn btn-lg btn-warning btn-block"><span class="fa fa-play"></span></button>
+                                <button type="button" class="btn btn-lg btn-block"><span class="fa fa-play"></span></button>
                             </div>
-                        </form>
+                            <div class="col-md-2">
+                               <button type="button" class="btn btn-lg btn-link btn-block btn-advanced-search usher" data-target="#RicercaAvanzata">Advanced Search</button>
+                            </div>
                     </div>
+
+                    <!-- Ricerca Avanzata (hidden) -->
+                    <section class="ricerca-avanzata row" id="RicercaAvanzata">
+                        <div class="col-md-6">
+                            <div class="input-group input-group">
+                                <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+                                <input type="text" class="form-control" placeholder="Indirizzo" value="Vicino a">
+                                <span class="input-group-addon"><a href="/"><span class="fa fa-location-arrow"></span></a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Raggio" value="Raggio">
+                        </div>
+                    </section><!-- /avanzata -->
+                        </form>
                 </div>
                 
             </section>
@@ -327,7 +344,6 @@
         </footer>
 
 </div>
-
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

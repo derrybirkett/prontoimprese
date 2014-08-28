@@ -6320,6 +6320,19 @@ li {
 .search .filled {
   background-color: #fecf0f;
 }
+.search .filled .btn {
+  background-color: #555;
+  color: #fecf0f;
+}
+.search .filled .btn a {
+  color: #fecf0f;
+}
+.search .filled .btn-advanced-search {
+  background: none;
+  color: black;
+  font-size: 12px;
+  text-decoration: underline;
+}
 .search .ricerca-avanzata {
   display: none;
 }
@@ -6328,6 +6341,7 @@ li {
     040 Buttons
         0400 Pronto buttons
         0410 Google Play
+        0420 Advanced Search Button
 
 ----------------------------------------*/
 /* Button Style for Pronto on Dark */
@@ -6935,7 +6949,7 @@ ul.index li {
 }
 ul.index li a {
   font-weight: 800;
-  font-size: 17px;
+  font-size: 15px;
   padding: 2px;
 }
 .index-list ul {
@@ -7073,13 +7087,6 @@ Styles up to small devices
     margin-top: 10px;
     margin-left: 5px;
     width: 95%;
-  }
-  .filled .btn {
-    background-color: #555;
-    color: #fecf0f;
-  }
-  .filled .btn a {
-    color: #fecf0f;
   }
   /* Footer */
   .footer .googleplay {
