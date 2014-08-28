@@ -6724,15 +6724,14 @@ ul.pager li.active a.inverse {
 }
 .new-review {
   display: none;
+  background: #f6f6f6;
+  padding: 10px 20px;
   /* Thumbs */
 }
 .new-review h3 {
   font-size: 16px;
   color: #f60;
   font-weight: bold;
-}
-.new-review .form-inline .form-control {
-  width: 40%;
 }
 .new-review .fa {
   font-size: 28px;
