@@ -6166,6 +6166,7 @@ li {
     0190 WIDGETS
     0200 MODALS
         0210 Login
+    0210 Tooltips
         
 
 */
@@ -6772,6 +6773,9 @@ ul.pager li.active a.inverse {
 
 
 ----------------------------------------*/
+.scheda .mappa {
+  display: none;
+}
 .schedina {
   /* Images */
   /* Foto legends (little tags over fotos) */
@@ -7005,6 +7009,15 @@ ul.index li a {
 .home .search .search-box .input-group-addon {
   min-width: 50px;
 }
+/* ---------------------------------------
+
+    0210 Tooltips    
+
+
+----------------------------------------*/
+.tooltip {
+  white-space: nowrap;
+}
 /* Mobile and small only */
 @media (max-width: 699px) {
   /* 
@@ -7118,6 +7131,9 @@ Styles up to small devices
 
 
 ----------------------------------------*/
+  .scheda .mappa {
+    display: block;
+  }
   /* ---------------------------------------
 
     040 MINISITO
