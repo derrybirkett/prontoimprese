@@ -16,7 +16,8 @@ Changelog
     * Hide Scheda googlemap on mobile, added button to show it (7b1cceb).
     * Update New Review form with background (c78ce6e)
     * Add contact form modal to Minisito & remove left/right margins on banners. (915edf9)
-    * Added demo Advanced search to Lista_semplice.html
+    * Added demo Advanced search to Lista_semplice.html (f05798)
+    * Container set to 990px
 
 
 /* ---------------------------------------
