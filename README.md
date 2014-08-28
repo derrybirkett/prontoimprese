@@ -14,8 +14,8 @@ Changelog
     * Change small and desktop breakpoints to 700px (so that desktop version is visible from tablet) (14926ceee3564ba963743c90251384a4789aca84)
     * Add tooltip to Aggungi ai preferiti, replace text with heart (796b2de)
     * Hide Scheda googlemap on mobile, added button to show it (7b1cceb).
-    * Update New Review form with background
-    * Add contact form modal to Minisito & remove left/right margins on banners.
+    * Update New Review form with background (c78ce6e)
+    * Add contact form modal to Minisito & remove left/right margins on banners. (915edf9)
 
 
 /* ---------------------------------------
