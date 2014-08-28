@@ -15,6 +15,7 @@ Changelog
     * Add tooltip to Aggungi ai preferiti, replace text with heart (796b2de)
     * Hide Scheda googlemap on mobile, added button to show it (7b1cceb).
     * Update New Review form with background
+    * Add contact form modal to Minisito & remove left/right margins on banners.
 
 
 /* ---------------------------------------

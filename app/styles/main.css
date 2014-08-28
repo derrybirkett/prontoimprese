@@ -6397,7 +6397,8 @@ ul.inline {
 ----------------------------------------*/
 .banner {
   background-color: #fecf0f;
-  margin: 30px 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .banner.island {
   width: 300px;
@@ -6781,6 +6782,9 @@ ul.pager li.active a.inverse {
 }
 .schedina h2 {
   margin-top: 5px;
+}
+.schedina a {
+  color: #555555;
 }
 .schedina .featured-image {
   height: 200px;
